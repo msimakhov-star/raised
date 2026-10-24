@@ -1,0 +1,119 @@
+# Nebius Token Factory documentation
+
+> Comprehensive Nebius Token Factory documentation: quickstart, API reference, model inference guides, fine-tuning, integrations & examples for seamless LLM deployment.
+
+- [Quickstart](https://docs.tokenfactory.nebius.com/quickstart.md): Welcome to Nebius Token Factory
+- [Switch to Token Factory](https://docs.tokenfactory.nebius.com/switch.md)
+- [Overview](https://docs.tokenfactory.nebius.com/ai-models-inference/overview.md): Get an inference engine overview
+- [Overview](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/overview.md)
+- [Quickstart](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/quickstart.md)
+- [Quickstart: Deploy via API](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/deploy-api.md)
+- [Quickstart: Deploy in UI](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/deploy-ui.md): Dedicated endpoints can be deployed and managed through the Token Factory UI, with API workflows also available for automation.
+- [Control & Data Plane](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/control-data-plane.md)
+- [Capacity, availability, and service guarantees](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/capacity-and-scaling.md)
+- [Billing Policy](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/billing-policy.md)
+- [Lifecycle & Readiness Status](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/lifecycle-and-status.md)
+- [Operating Dedicated Endpoint](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/operating.md)
+- [Best Practices](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/best-practice.md)
+- [Custom model weights](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/custom-weights.md)
+- [FAQ & Troubleshooting](https://docs.tokenfactory.nebius.com/ai-models-inference/dedicated-endpoints/faq.md)
+- [Function calling & Tools](https://docs.tokenfactory.nebius.com/ai-models-inference/function-calling.md): Learn how to make models select functions to extend their capabilities
+- [Structured output & JSON](https://docs.tokenfactory.nebius.com/ai-models-inference/json.md): Learn how to get structured output from our text models
+- [Rate Limits & Scaling](https://docs.tokenfactory.nebius.com/ai-models-inference/rate-limits.md): Learn how rate limiting of requests works and what are the scaling rules
+- [UI & Playground](https://docs.tokenfactory.nebius.com/ai-models-inference/playground.md)
+- [Public Serverless Endpoints](https://docs.tokenfactory.nebius.com/public-serverless.md)
+- [Cached Tokens](https://docs.tokenfactory.nebius.com/cached-tokens.md)
+- [Inference Observability](https://docs.tokenfactory.nebius.com/ai-models-inference/observability.md)
+- [Observability API integrations](https://docs.tokenfactory.nebius.com/ai-models-inference/observability-api-integrations.md)
+- [Overview](https://docs.tokenfactory.nebius.com/post-training/overview.md): Post-training on Nebius Token Factory
+- [ Dataset formats for fine-tuning](https://docs.tokenfactory.nebius.com/post-training/datasets.md)
+- [Models for fine-tuning in Nebius Token Factory](https://docs.tokenfactory.nebius.com/post-training/models.md): Supported base models for fine-tuning in Nebius Token Factory, with available context lengths and fine-tuning types (LoRA and full fine-tuning), grouped by provider.
+- [Supervised Finetuning ](https://docs.tokenfactory.nebius.com/post-training/how-to-fine-tune.md): Fine-tune a base model on your own data using Nebius Token Factory. This guide walks you through creating a job, monitoring it, and retrieving checkpoints via API and Python.
+- [Custom speculator](https://docs.tokenfactory.nebius.com/post-training/custom-speculator.md)
+- [Merging LoRA Adapters](https://docs.tokenfactory.nebius.com/post-training/merge-moe-lora-weights.md): When you fine-tune a model with LoRA, inference usually requires loading both the base model and the LoRA adapter. Here we provide a merge script that bakes the LoRA adapters directly into the base weights and produces a standard checkpoint directory.
+- [Overview](https://docs.tokenfactory.nebius.com/data-lab/overview.md)
+- [Import Chat Completions](https://docs.tokenfactory.nebius.com/data-lab/chat-completions.md)
+- [Fine-tuning](https://docs.tokenfactory.nebius.com/data-lab/fine-tuning.md)
+- [Data Processing](https://docs.tokenfactory.nebius.com/data-lab/data-processing.md)
+- [Datasets](https://docs.tokenfactory.nebius.com/data-lab/datasets.md)
+- [Sandboxes overview](https://docs.tokenfactory.nebius.com/sandboxes/overview.md): Give applications and AI agents an isolated environment to execute code, evaluate results, and work with files.
+- [Set up access](https://docs.tokenfactory.nebius.com/sandboxes/start/set-up-access.md): Create credentials, select a project, verify Sandboxes access, and find a base image.
+- [Python quickstart](https://docs.tokenfactory.nebius.com/sandboxes/start/python-quickstart.md): Create a Python project, save a filesystem change, and reuse it in a later operation.
+- [CLI quickstart](https://docs.tokenfactory.nebius.com/sandboxes/start/cli-quickstart.md): Install the Sandboxes CLI, configure a profile, and reuse saved filesystem state.
+- [Choose an interface](https://docs.tokenfactory.nebius.com/sandboxes/start/choose-an-interface.md): Choose between the Python SDK, REST API, CLI, and MCP for a Sandboxes workflow.
+- [Execution lifecycle](https://docs.tokenfactory.nebius.com/sandboxes/concepts/execution-lifecycle.md): Understand operations, processes, client waits, event streams, and saved images.
+- [Images, checkpoints, and branches](https://docs.tokenfactory.nebius.com/sandboxes/concepts/images-checkpoints-and-branches.md): Save filesystem state deliberately and start independent work from immutable images.
+- [Sessions and execution modes](https://docs.tokenfactory.nebius.com/sandboxes/concepts/sessions-and-execution-modes.md): Distinguish client workflow state from operations and live processes.
+- [Run commands and handle results](https://docs.tokenfactory.nebius.com/sandboxes/guides/run-commands-and-results.md): Choose command or shell execution, make persistence explicit, and interpret operation and process results.
+- [Stream output and events](https://docs.tokenfactory.nebius.com/sandboxes/guides/stream-output-and-events.md): Observe stdout, stderr, and operation events over SSE, resume after disconnect, and verify the final result.
+- [Run subprocesses and send input](https://docs.tokenfactory.nebius.com/sandboxes/guides/run-subprocesses-and-send-input.md): Start an additional process inside an active operation, exchange input, observe output, and end it deliberately.
+- [Prepare and reuse environments](https://docs.tokenfactory.nebius.com/sandboxes/guides/prepare-and-reuse-environments.md): Create a reusable filesystem image from setup commands, OCI import, or the supported CLI Dockerfile workflow.
+- [Work with files and artifacts](https://docs.tokenfactory.nebius.com/sandboxes/guides/work-with-files-and-artifacts.md): Inject files, retain generated artifacts, inspect images, and download bytes after execution.
+- [Branch, compare, and recover](https://docs.tokenfactory.nebius.com/sandboxes/guides/branch-compare-and-recover.md): Run alternatives from one image, select a verified result, and recover from a known-good checkpoint.
+- [Configure networking and secrets](https://docs.tokenfactory.nebius.com/sandboxes/guides/configure-networking-and-secrets.md): Disable the guest network where supported and keep credentials out of retained state and output.
+- [Run concurrent workloads](https://docs.tokenfactory.nebius.com/sandboxes/guides/run-concurrent-workloads.md): Bound parallel operations, correlate state, classify failures, and cancel only work owned by the batch.
+- [Sandboxes cookbook](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/index.md): Complete Sandboxes workflows with explicit state, expected outcomes, and failure handling.
+- [Prepare once, reuse safely](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/prepare-once-reuse-safely.md): Save one prepared filesystem image and reuse it in independent later operations.
+- [Stream a build or test run](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/stream-a-build-or-test-run.md): Run a deterministic test suite, display stdout and stderr over SSE, resume after disconnect, and verify both success and failure.
+- [Interact with a process during an operation](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/interact-with-a-process.md): Spawn a child in an active operation, send two inputs and EOF, test signals and parent finalization, and clean up on failure.
+- [Try two coding fixes and keep the passing branch](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/try-two-coding-fixes.md): Apply two isolated patches to failing deterministic tests, select the passing image, and continue from it.
+- [Generate and download a binary artifact](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/generate-and-download-binary-artifact.md): Produce a deterministic binary file, retain it, download it, and verify exact bytes locally.
+- [Build and refresh a reusable custom environment](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/build-reusable-custom-environment.md): Build the supported Dockerfile subset, resolve the immutable UUID, run twice, and refresh after a source change.
+- [Prepare inputs, then verify with networking disabled](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/verify-with-networking-disabled.md): Save prepared inputs, verify them without a guest network interface, and inspect both operations using Python.
+- [Run a bounded evaluation batch](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/run-bounded-evaluation-batch.md): Correlate item, operation, and image IDs; classify outcomes; and cancel only work owned by the batch.
+- [Recover from a known-good image](https://docs.tokenfactory.nebius.com/sandboxes/cookbook/recover-from-known-good-image.md): Diagnose a deliberate command failure and retry corrected work from the recorded checkpoint.
+- [Troubleshooting](https://docs.tokenfactory.nebius.com/sandboxes/operate/troubleshooting.md): Diagnose access, execution, output, state, subprocess, network, and concurrency failures.
+- [Limits, retention, and usage](https://docs.tokenfactory.nebius.com/sandboxes/operate/limits-retention-and-usage.md): Plan for service limits and retention, and inspect the fields available to your account.
+- [Security and data handling](https://docs.tokenfactory.nebius.com/sandboxes/operate/security-and-data-handling.md): Protect data and credentials across uploads, output, images, networking, and local downloads.
+- [Update images and clients](https://docs.tokenfactory.nebius.com/sandboxes/operate/update-images-and-clients.md): Refresh prepared images, pin immutable inputs, and validate client upgrades.
+- [Reference map and compatibility](https://docs.tokenfactory.nebius.com/sandboxes/reference/index.md): Find REST endpoints, Python methods, CLI commands, and MCP tools for your workflow.
+- [Sandboxes for SWE agents](https://docs.tokenfactory.nebius.com/sandboxes/swe-agents.md)
+- [Overview](https://docs.tokenfactory.nebius.com/sandboxes/sdk/index.md)
+- [Getting Started](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/getting-started.md)
+- [Working with Images](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/images.md)
+- [Running Commands](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/running-commands.md)
+- [Branching Workflows](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/branching.md)
+- [API Reference](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/index.md)
+- [Clients](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/client.md)
+- [Images Manager](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/images.md)
+- [Files Manager](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/files.md)
+- [Images](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/image.md)
+- [Sessions](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/session.md)
+- [Image files/directories](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/image_fs.md)
+- [subprocess](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/subprocess.md)
+- [OCIReference](https://docs.tokenfactory.nebius.com/sandboxes/sdk/python_sdk/reference/oci.md)
+- [Integrations](https://docs.tokenfactory.nebius.com/sandboxes/sdk/integrations/index.md)
+- [Mini-SWE-Agent Integration](https://docs.tokenfactory.nebius.com/sandboxes/sdk/integrations/mini-swe-agent.md)
+- [LangChain Integration](https://docs.tokenfactory.nebius.com/sandboxes/sdk/integrations/langchain.md)
+- [Overview](https://docs.tokenfactory.nebius.com/sandboxes/cli/index.md)
+- [Tutorial](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/index.md)
+- [Install & Authenticate](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/installation.md)
+- [Your First Sandbox](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/first-steps.md)
+- [Interactive Shell](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/shell.md)
+- [Sessions, Branches & Rollback](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/sessions.md)
+- [Working with Files](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/files.md)
+- [Images & Tags](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/images.md)
+- [Building from a Dockerfile](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/build.md)
+- [Scripting & Automation](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/workflows.md)
+- [Configuration & Profiles](https://docs.tokenfactory.nebius.com/sandboxes/cli/tutorial/configuration.md)
+- [Command Reference](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/index.md)
+- [auth - Configure credentials and profiles](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/auth.md)
+- [use - Choose an image for the session](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/use.md)
+- [run - Execute a command in the sandbox](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/run.md)
+- [build - Build an image from a Dockerfile](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/build.md)
+- [images - List and import images](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/images.md)
+- [tag - Tag or untag an image](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/tag.md)
+- [operation - Manage operations](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/operation.md)
+- [ps - List activity](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/ps.md)
+- [show - Inspect an operation](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/show.md)
+- [kill - Cancel operations](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/kill.md)
+- [ls - List files in the image](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/ls.md)
+- [cat - Show file content from the image](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/cat.md)
+- [grep - Search file contents in the image](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/grep.md)
+- [cp - Download a file from the image](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/cp.md)
+- [cd - Change session working directory](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/cd.md)
+- [env - Manage session environment variables](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/env.md)
+- [file - Stage file edits for the next run](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/file.md)
+- [session - Manage sessions, branches, history](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/session.md)
+- [shell - Interactive REPL](https://docs.tokenfactory.nebius.com/sandboxes/cli/commands/shell.md)
+- [skill - Install agent skills](https://docs.tokenfactory.nebius.com/sandboxes/cli/comman
