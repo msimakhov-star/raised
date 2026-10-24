@@ -112,7 +112,7 @@ def test_deplot_roundtrip():
 
 def test_rms_f1_perfect_and_degraded():
     assert metrics.rms_f1(T, T)[2] == 1.0
-    assert metrics.rms_f1(T, None) == (1, 0, 0) or metrics.rms_f1(T, None)[2] == 0
+    assert metrics.rms_f1(T, None) == (0.0, 0.0, 0.0)
     off = Table(T.x, {"Brazil": [10.0, 20.0, 31.0], "Chile": [1.0, None, 3.0]})   # 3% off stays partial credit
     assert 0.9 < metrics.rms_f1(T, off)[2] < 1.0
     far = Table(T.x, {"Brazil": [10.0, 20.0, 60.0], "Chile": [1.0, None, 3.0]})   # 100% off scores 0 on that cell
@@ -131,7 +131,7 @@ def test_align_by_name_x_and_position():
     assert got == {"Brazil": [10.0, 20.0, 30.0], "Chile": [1.0, None, 3.0]}
     renamed = Table(["a", "b", "c"], {"s1": [10.0, 20.0, 30.0], "s2": [1.0, None, 3.0]})  # order, then position
     assert metrics.align(T, renamed) == {"Brazil": [10.0, 20.0, 30.0], "Chile": [1.0, None, 3.0]}
-    near = Table([2018.4, 2019.6], {"Brazil": [11.0, 22.0]})                    # nearest x within half spacing
+    near = Table([2018.4, 2019.1], {"Brazil": [11.0, 22.0]})                    # nearest x within half spacing
     assert metrics.align(T, near)["Brazil"] == [11.0, 22.0, None]
 
 
@@ -173,3 +173,5 @@ def test_semantics_accuracy():
     bad = Semantics.from_dict({"chart_type": "bar", "x_scale": "linear", "series": []})
     assert not any(metrics.semantics_accuracy(truth, bad).values())
     assert not any(metrics.semantics_accuracy(truth, None).values())
+    quirk = Semantics.from_dict({"chart_type": "hbar", "x_scale": "category", "y_scale": "linear"})  # generator's hbar labels
+    assert metrics.semantics_accuracy(quirk, Semantics.from_dict({"chart_type": "hbar", "x_scale": "linear", "y_scale": "category"}))["scale"]

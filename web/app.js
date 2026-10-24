@@ -29,6 +29,13 @@ function fmt(v, digits = 3) {
   return Number(v.toPrecision(digits)).toLocaleString('en-GB');
 }
 
+/* x values: categories as printed, years without separators, other numbers to at most 2 decimals */
+function fmtX(x) {
+  if (typeof x !== 'number') return String(x ?? '');
+  if (Math.abs(x - Math.round(x)) < 0.05) return String(Math.round(x));
+  return String(Number(x.toFixed(2)));
+}
+
 /* ---------------- start: samples and upload ---------------- */
 async function loadSamples() {
   const list = await fetch('/api/samples').then(r => r.json()).catch(() => []);
@@ -87,12 +94,12 @@ async function run({ sample, file }) {
 let railQ = Promise.resolve();
 function startRail() {
   $('#progress').hidden = false;
-  $('#rail').innerHTML = STEPS.map(([k, t, who]) => `<li data-step="${k}"><span class="dot" aria-hidden="true"></span><span>${t} <span class="info"></span></span><span class="who">${who}</span></li>`).join('');
+  $('#rail').innerHTML = STEPS.map(([k, t, who]) => `<li data-step="${k}" data-label="${t}"><span class="dot" aria-hidden="true"></span><span>${t} <span class="info"></span></span><span class="who">${who}</span></li>`).join('');
   railQ = Promise.resolve();
   $('#progress').scrollIntoView({ block: 'start' });
 }
 function railEvent(ev) {
-  railQ = railQ.then(() => new Promise(done => {
+  railQ = railQ.then(() => new Promise(done => { try {
     const li = $(`#rail li[data-step="${ev.step}"]`); if (!li) return done();
     li.classList.toggle('running', ev.status === 'running');
     if (ev.status === 'done') li.classList.add('done');
@@ -103,12 +110,12 @@ function railEvent(ev) {
     if (ev.usd !== undefined) bits.push(`$${Number(ev.usd).toFixed(4)} so far`);
     if (ev.recorded) bits.push('recorded');
     if (bits.length) $('.info', li).textContent = '· ' + bits.join(' · ');
-    if (ev.status === 'done') $('#progress-live').textContent = `${$('span', li).firstChild.textContent.trim()}: done.`;
+    if (ev.status === 'done') $('#progress-live').textContent = `${li.dataset.label}: done.`;
     setTimeout(done, ev.recorded ? 90 : 0);  // recorded runs arrive at once; pace them so they can be followed
-  }));
+  } catch (e) { console.warn('progress', e); done(); } }));
 }
 async function railDone(ok = true) {
-  await railQ;
+  await railQ.catch(() => {});
   $$('#rail li').forEach(li => li.classList.remove('running'));
   if (ok) setTimeout(() => { $('#progress').hidden = true; }, 400);
 }
@@ -173,8 +180,8 @@ function renderCompare(f) {
   const disputed = (f.points || []).filter(p => p.status === 'disputed');
   $('#no-disputes').hidden = disputed.length > 0 || f.status === 'unsupported';
   $('#dispute-list').innerHTML = disputed.map((p, k) => `<li class="dispute">
-      <p><b>${esc(p.series)}, ${esc(p.x)}</b>: the vision model read <b>${fmt(p.reading_a)}</b>, the pixels measure <b>${fmt(p.reading_b)}</b>. ${esc(p.note || '')}</p>
-      <label>Value to use <input type="text" inputmode="decimal" data-k="${k}" value="${p.value ?? ''}" aria-label="Value for ${esc(p.series)} at ${esc(p.x)}"></label></li>`).join('');
+      <p><b>${esc(p.series)}, ${esc(fmtX(p.x))}</b>: the vision model read <b>${fmt(p.reading_a)}</b>, the pixels measure <b>${fmt(p.reading_b)}</b>. ${esc(p.note || '')}</p>
+      <label>Value to use <input type="text" inputmode="decimal" data-k="${k}" value="${p.value ?? ''}" aria-label="Value for ${esc(p.series)} at ${esc(fmtX(p.x))}"></label></li>`).join('');
   $('#accept').hidden = disputed.length === 0;
 }
 $('#mix').addEventListener('input', e => { $('#img-rerender').style.opacity = e.target.value / 100; $('#mix-out').textContent = e.target.value + '%'; });
@@ -203,9 +210,10 @@ function renderTable(f) {
   const names = Object.keys(t.series);
   const flagged = new Set((f.points || []).filter(p => p.status === 'disputed').map(p => p.series + '|' + p.x));
   const xTitle = f.semantics?.x_title || (f.chart_type?.includes('bar') ? 'Category' : 'x');
-  $('#table-wrap').innerHTML = `<table><caption>${esc(f.title || 'Data')}${f.semantics?.y_title ? ' (' + esc(f.semantics.y_title) + ')' : ''}</caption>
+  const yt = f.semantics?.y_title || '', tt = f.title || 'Data';
+  $('#table-wrap').innerHTML = `<table><caption>${esc(tt)}${yt && !tt.toLowerCase().includes(yt.split(' (')[0].toLowerCase()) ? ' (' + esc(yt) + ')' : ''}</caption>
     <thead><tr><th scope="col">${esc(xTitle)}</th>${names.map(n => `<th scope="col">${esc(n)}</th>`).join('')}</tr></thead>
-    <tbody>${t.x.map((x, i) => `<tr><th scope="row">${esc(typeof x === 'number' ? Number(x.toFixed(4)) : x)}</th>${names.map(n => {
+    <tbody>${t.x.map((x, i) => `<tr><th scope="row">${esc(fmtX(x))}</th>${names.map(n => {
       const v = t.series[n][i]; const fl = flagged.has(n + '|' + x);
       return `<td class="${fl ? 'flag' : ''}">${v === null || v === undefined ? '<span aria-label="not read">–</span>' : esc(fmt(v, 4))}${fl ? '<span class="sr-only"> (needs review)</span>' : ''}</td>`;
     }).join('')}</tr>`).join('')}</tbody></table>`;
@@ -226,7 +234,10 @@ function renderExplorer(f) {
   $('#tab-explore').hidden = !ok; if (!ok) return;
   ex = { s: 0, i: 0, map: mappingFor(f), names: Object.keys(f.table.series) };
   drawExplorer(); $('#wav').hidden = !f.wav; if (f.wav) $('#wav').href = f.wav;
-  $('#explorer-now').textContent = `${ex.names.length} series, ${f.table.x.length} points. Press an arrow key to start.`;
+  const sem = f.semantics || {};
+  const axes = [sem.x_title && `across: ${sem.x_title}`, sem.y_title && `up: ${sem.y_title}`].filter(Boolean).join('; ');
+  $('#explorer-now').textContent = `${ex.names.length} series, ${f.table.x.length} points${axes ? ` (${axes})` : ''}. Press an arrow key to start.`;
+  $('#explorer').setAttribute('aria-label', `Chart explorer for ${f.title || 'this chart'}. ${axes}.`);
 }
 function drawExplorer() {
   const f = state.fig, W = 800, H = 260, P = 24, t = f.table;
@@ -253,8 +264,7 @@ function tone(hz, ms = 180) {
 }
 function announce() {
   const f = state.fig, name = ex.names[ex.s], pt = ex.map.series[name][ex.i];
-  const unit = f.semantics?.y_title ? ` ${f.semantics.y_title}` : '';
-  const msg = `${pt.x}: ${fmt(pt.value)}${pt.value === null ? '' : unit}. ${name}, point ${ex.i + 1} of ${f.table.x.length}.`;
+  const msg = `${fmtX(pt.x)}: ${fmt(pt.value)}. ${name}, point ${ex.i + 1} of ${f.table.x.length}.`;
   $('#explorer-now').textContent = msg; $('#explorer-live').textContent = msg; tone(pt.hz); drawExplorer();
 }
 let playing = null;

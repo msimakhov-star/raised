@@ -1,0 +1,9 @@
+[
+ {
+  "id": "dev",
+  "title": "Development fixture",
+  "subtitle": "Synthetic charts, not a real run",
+  "thumb": "/samples/dev/f1-chart.jpg",
+  "note": "development fixture built from synthetic charts with known values, not a model run"
+ }
+]

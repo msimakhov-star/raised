@@ -337,8 +337,9 @@ def from_deplot(text: str) -> Table:
 
 def rms_f1(truth: Table, pred: Table | None, x_header: str = "") -> tuple[float, float, float]:
     """(precision, recall, F1) in [0, 1] between two Tables; a failed reading (None) scores 0."""
-    target = to_deplot(truth, x_header)
-    scores = table_datapoints_precision_recall_per_point([[target]], [to_deplot(pred) if pred else ""])
+    if pred is None:
+        return 0.0, 0.0, 0.0
+    scores = table_datapoints_precision_recall_per_point([[to_deplot(truth, x_header)]], [to_deplot(pred)])
     return scores["precision"][0], scores["recall"][0], scores["f1"][0]
 
 
@@ -383,6 +384,15 @@ def align(truth: Table, pred: Table) -> dict[str, list[float | None]]:
         col = pred.series.get(pairs.get(t, ""), [])
         out[t] = [col[j] if j is not None and j < len(col) else None for j in index]
     return out
+
+
+def is_log(sem: Semantics) -> bool:
+    """Log value axis? Both axes are checked because the generator files horizontal bars' scale on the category axis."""
+    return "log" in (sem.x_scale, sem.y_scale)
+
+
+def value_ticks(sem: Semantics) -> list[str]:
+    return sem.x_ticks if sem.value_axis == "x" else sem.y_ticks
 
 
 def axis_range(table: Table, chart_type: str = "line", ticks: list[str] | None = None, log: bool = False):
@@ -447,9 +457,9 @@ def catch_stats(records: list[dict]) -> dict:
 
 
 def semantics_accuracy(truth: Semantics, pred: Semantics | None) -> dict[str, bool]:
-    """Chart type, series count and axis scale (value axis) against the generator's truth."""
+    """Chart type, series count and log-or-not of the value axis against the generator's truth."""
     if pred is None:
         return {"chart_type": False, "n_series": False, "scale": False}
     return {"chart_type": pred.chart_type == truth.chart_type,
             "n_series": len(pred.series) == len(truth.series),
-            "scale": getattr(pred, f"{truth.value_axis}_scale") == getattr(truth, f"{truth.value_axis}_scale")}
+            "scale": is_log(pred) == is_log(truth)}

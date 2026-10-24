@@ -127,7 +127,8 @@ def build(state, web_dir: Path, data_dir: Path) -> FastAPI:
                 raise ValueError("unknown sample")
             for ev in pipeline.recorded_events(sample, samples_dir):
                 emit(ev)
-            return recorded(sample, "this sample was read earlier with the full pipeline")
+            note = next((s.get("note") for s in index if s["id"] == sample), None)
+            return recorded(sample, note or "this sample was read earlier with the full pipeline")
         reason = over_limit(request) or (None if pipeline.live() else "no model key is configured on this server")
         if reason is None:
             job = secrets.token_urlsafe(9)
