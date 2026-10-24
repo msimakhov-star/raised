@@ -98,9 +98,8 @@ def _pixel_only() -> Reader:
         found = locate_ticks(img, case.semantics)
         # sample where the truth is: x values for line and scatter, category labels for bars
         out = trace_at(img, case.semantics, found, list(case.truth.x))
-        cols = list(out.values()) if isinstance(out, dict) else out
-        names = [s.name for s in case.semantics.series]
-        return Reading(Table(list(case.truth.x), {n: list(c) for n, c in zip(names, cols)}))
+        series = out if isinstance(out, dict) else dict(zip((s.name for s in case.semantics.series), out))
+        return Reading(Table(list(case.truth.x), {n: list(c) for n, c in series.items()}))
 
     return read
 
@@ -132,8 +131,7 @@ def _need(what: str, loader):
 
 
 def get_reader(config: str) -> Reader:
-    return _need(f"the code behind config {config!r} (raised.ticks / raised.trace for pixel_only, "
-                 "raised.pipeline.read_chart otherwise)", READERS[config])
+    return _need("raised.ticks and raised.trace" if config == "pixel_only" else "raised.pipeline.read_chart", READERS[config])
 
 
 def get_checker(config: str) -> Checker:
@@ -147,19 +145,14 @@ def get_checker(config: str) -> Checker:
 # ---------------------------------------------------------------- running
 
 
-def _pmap(fn, items: list, workers: int):
-    done = 0
-
-    def tick(x):
-        nonlocal done
-        r = fn(x)
-        done += 1
-        if done % max(1, len(items) // 10) == 0:
-            print(f"  {done}/{len(items)}", file=sys.stderr, flush=True)
-        return r
-
+def _pmap(fn, items: list, workers: int) -> list:
+    out = []
     with ThreadPoolExecutor(max(1, workers)) as ex:
-        return list(ex.map(tick, items))
+        for i, r in enumerate(ex.map(fn, items), 1):
+            out.append(r)
+            if i % max(1, len(items) // 10) == 0:
+                print(f"  {i}/{len(items)}", file=sys.stderr, flush=True)
+    return out
 
 
 def evaluate(case: Case, reader: Reader) -> dict:
@@ -234,9 +227,9 @@ COLS = [("n", lambda s: str(s["n"])), ("failed", lambda s: str(s.get("failed", "
         ("RMS-F1", lambda s: _fmt(s.get("rms_f1"))),
         ("median err (% of range)", lambda s: _fmt(s.get("median_err_pct"), 2)),
         ("within 2%", lambda s: _fmt(s.get("within_2pct"), pct=True)), ("missing", lambda s: _fmt(s.get("missing"), pct=True)),
-        ("chart type", lambda s: _fmt(s.get("semantics", {}).get("chart_type"), pct=True)),
-        ("series count", lambda s: _fmt(s.get("semantics", {}).get("n_series"), pct=True)),
-        ("axis scale", lambda s: _fmt(s.get("semantics", {}).get("scale"), pct=True)),
+        ("type acc", lambda s: _fmt(s.get("semantics", {}).get("chart_type"), pct=True)),
+        ("series acc", lambda s: _fmt(s.get("semantics", {}).get("n_series"), pct=True)),
+        ("scale acc", lambda s: _fmt(s.get("semantics", {}).get("scale"), pct=True)),
         ("$ / figure", lambda s: _fmt(s.get("usd_per_figure"), 4)), ("s / figure", lambda s: _fmt(s.get("seconds_per_figure"), 2))]
 
 
@@ -244,30 +237,32 @@ def _md(head: list[str], rows: list[list[str]]) -> str:
     return "\n".join(["| " + " | ".join(head) + " |", "|" + "---|" * len(head), *("| " + " | ".join(r) + " |" for r in rows)]) + "\n"
 
 
-def write_summary(results_dir: Path = RESULTS) -> str:
+def write_summary(results_dir: Path | None = None) -> str:
     """Merge every <config>-<split>.json into SUMMARY.md and results.json (summaries only, for the /bench page)."""
+    results_dir = results_dir or RESULTS
     runs = [json.loads(p.read_text()) for p in sorted(results_dir.glob("*-*.json"))]
     merged = {f"{r['config']}-{r['split']}": {"summary": r["summary"], "verifier": r.get("verifier"), "date": r["date"]} for r in runs}
     (results_dir / "results.json").write_text(json.dumps(merged, indent=1))
-    md = ["# Raised benchmark\n",
+    md = ["# Raised benchmark\n\n",
           "RMS-F1: DePlot's table metric (arXiv 2212.10505) in percent, a failed chart scores 0. Median err: median "
           "|read - true| / value-axis range over every true value that was read (percent); `within 2%` and `missing` count all "
           "true values, so a missing value is a miss. Numeric metrics need the generator's exact axis, so only synthetic splits "
-          "have them. Semantic accuracy is shown for configs that read semantics with a model.\n"]
+          "have them. type / series / scale acc: share of charts whose chart type, series count and log-or-linear value axis the "
+          "model read correctly (configs that read semantics with a model only).\n"]
     for split in SPLITS:
         rs = [r for r in runs if r["split"] == split]
         if not rs:
             continue
-        md.append(f"\n## {split}\n")
+        md.append(f"\n## {split}\n\n")
         md.append(_md(["config", *(h for h, _ in COLS)], [[r["config"], *(f(r["summary"]) for _, f in COLS)] for r in rs]))
         for key, label in (("by_chart_type", "chart type"), ("by_source", "source")):
             groups = [(r["config"], g, s) for r in rs for g, s in r["summary"].get(key, {}).items()]
             if len({g for _, g, _ in groups}) > 1:
-                md.append(f"\nBy {label}:\n")
+                md.append(f"\nBy {label}:\n\n")
                 md.append(_md(["config", label, *(h for h, _ in COLS)], [[c, g, *(f(s) for _, f in COLS)] for c, g, s in sorted(groups, key=lambda t: (t[1], t[0]))]))
         ver = [(r["config"], r["verifier"]) for r in rs if r.get("verifier")]
         if ver:
-            md.append("\nVerifier on planted faults:\n")
+            md.append("\nVerifier on planted faults:\n\n")
             md.append(_md(["config", "faults", "caught", "clean charts", "false alarms", "caught by kind"],
                           [[c, str(v["n_faulty"]), _fmt(v["catch_rate"], pct=True), str(v["n_clean"]), _fmt(v["false_alarm_rate"], pct=True),
                             ", ".join(f"{k} {_fmt(x, 0, pct=True)}" for k, x in v["catch_by_kind"].items())] for c, v in ver]))
@@ -286,7 +281,7 @@ def main(argv: list[str] | None = None) -> None:
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--summary", action="store_true", help="only rebuild SUMMARY.md")
     a = ap.parse_args(argv)
-    RESULTS.mkdir(exist_ok=True)
+    RESULTS.mkdir(parents=True, exist_ok=True)
     if a.summary:
         print(write_summary())
         return

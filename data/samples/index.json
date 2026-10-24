@@ -1,5 +1,12 @@
 [
  {
+  "id": "synthetic",
+  "title": "Three synthetic charts",
+  "subtitle": "Known values, measured by the real code",
+  "thumb": "/samples/synthetic/f1-chart.png",
+  "note": "synthetic charts whose meaning comes from the generator; pixels were measured and checked by the real code; descriptions come from the template writer, not the language model"
+ },
+ {
   "id": "dev",
   "title": "Development fixture",
   "subtitle": "Synthetic charts, not a real run",

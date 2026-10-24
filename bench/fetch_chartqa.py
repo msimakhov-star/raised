@@ -1,6 +1,6 @@
 """Fetch a stratified sample of the ChartQA test split into bench/data/chartqa/ (gitignored, never committed).
 
-    python -m bench.fetch_chartqa [--n 200] [--seed 0] [--force]
+    python -m bench.fetch_chartqa [--n 200] [--seed 0]
 
 Source: Hugging Face dataset ahmed-masry/ChartQA, file "ChartQA Dataset.zip" (875 MB; also the layout described in
 github.com/vis-nlp/ChartQA README: <split>/png, <split>/tables, <split>/annotations). We never download the zip: its
@@ -55,7 +55,7 @@ class Remote:
 
     def __init__(self):
         self.client = httpx.Client(follow_redirects=True, timeout=120)
-        self._resolve()
+        self.url, self.size = None, 0  # resolved on first use, so a complete cache needs no network
 
     def _resolve(self):
         r = self.client.head(URL)
@@ -64,6 +64,8 @@ class Remote:
 
     def get(self, start: int, end: int) -> bytes:
         """Bytes [start, end), end clamped to the file size."""
+        if self.url is None:
+            self._resolve()
         end = min(end, self.size)
         for attempt in (0, 1):
             r = self.client.get(self.url, headers={"Range": f"bytes={start}-{end - 1}"})
@@ -76,6 +78,8 @@ class Remote:
     def as_file(self):
         """A file object over the zip for zipfile (central directory only: a few large reads)."""
         remote = self
+        if self.url is None:
+            self._resolve()
 
         class F(io.RawIOBase):
             pos = 0
@@ -198,19 +202,16 @@ def select(cands: list[dict], n: int, seed: int) -> list[dict]:
 # ---------------------------------------------------------------- main
 
 
-def fetch(n: int = 200, seed: int = 0, force: bool = False) -> list[dict]:
+def fetch(n: int = 200, seed: int = 0) -> list[dict]:
+    """The sample (list of case dicts), downloading whatever is missing from the cache. Selection is deterministic,
+    so a second call with the same arguments changes nothing and uses no network."""
     ROOT.mkdir(parents=True, exist_ok=True)
-    sample_p = ROOT / "sample.json"
-    if sample_p.exists() and not force:
-        sample = json.loads(sample_p.read_text())
-        if len(sample) == n and all((ROOT / c["image"]).exists() for c in sample):
-            return sample  # idempotent: nothing to do
     remote = Remote()
-    idx = load_index(remote)
     meta_p = ROOT / "meta.json"
     if meta_p.exists():
         meta = json.loads(meta_p.read_text())
     else:
+        idx = load_index(remote)
         ids = sorted(k[len(PREFIX + "tables/"):-4] for k in idx if k.startswith(PREFIX + "tables/") and k.endswith(".csv"))
         names = [f"{PREFIX}tables/{i}.csv" for i in ids] + [f"{PREFIX}annotations/{i}.json" for i in ids]
         blobs = fetch_members(remote, idx, names, gap=1 << 20)
@@ -225,11 +226,12 @@ def fetch(n: int = 200, seed: int = 0, force: bool = False) -> list[dict]:
             cands.append({"id": i, "source": source_of(i), "chart_type": TYPES[m["type"]], "x_header": xh,
                           "image": f"png/{i}.png", "table": table.to_dict()})
     sample = select(cands, n, seed)
-    missing = [c for c in sample if not (ROOT / c["image"]).exists()]
-    (ROOT / "png").mkdir(exist_ok=True)
-    for name, data in fetch_members(remote, idx, [f"{PREFIX}png/{c['id']}.png" for c in missing], gap=1 << 16).items():
-        (ROOT / "png" / name.rsplit("/", 1)[1]).write_bytes(data)
-    sample_p.write_text(json.dumps(sample, indent=1))
+    missing = [c["id"] for c in sample if not (ROOT / "png" / f"{c['id']}.png").exists()]
+    if missing:
+        (ROOT / "png").mkdir(exist_ok=True)
+        for name, data in fetch_members(remote, load_index(remote), [f"{PREFIX}png/{i}.png" for i in missing], gap=1 << 16).items():
+            (ROOT / "png" / name.rsplit("/", 1)[1]).write_bytes(data)
+    (ROOT / "sample.json").write_text(json.dumps(sample, indent=1))
     return sample
 
 
@@ -237,9 +239,8 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--n", type=int, default=200)
     ap.add_argument("--seed", type=int, default=0)
-    ap.add_argument("--force", action="store_true", help="reselect and refetch even if sample.json is complete")
     a = ap.parse_args()
-    s = fetch(a.n, a.seed, a.force)
+    s = fetch(a.n, a.seed)
     by = defaultdict(int)
     for c in s:
         by[(c["source"], c["chart_type"])] += 1

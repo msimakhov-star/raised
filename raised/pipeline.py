@@ -85,6 +85,31 @@ def _adjudicate(reading_a, reading_b, img, sem, tr):
     return adjudicate(reading_a, reading_b, img, sem, tr)
 
 
+def _trace_at(img, sem, tr, xs):
+    from .trace import trace_at
+    return trace_at(img, sem, tr, xs)
+
+
+def _regular_line_table(img, sem: Semantics, tr: dict, table: Table) -> Table:
+    """Without a model reading, trace() samples lines at their own vertices, which can mean hundreds of irregular x
+    values. Re-measure at a grid a student can read: whole steps when the x ticks are integers (years), else the ticks."""
+    if sem.chart_type != "line" or len(table.x) <= 40:
+        return table
+    ticks = [v for _, v, _ in (tr.get("x_ticks") or []) if v is not None]
+    xs_line = [x for x in table.x if isinstance(x, (int, float))]
+    if len(ticks) < 2 or not xs_line:
+        return table
+    lo, hi = min(xs_line), max(xs_line)
+    if all(abs(t - round(t)) < 1e-6 for t in ticks) and hi - lo <= 120:
+        xs = [float(x) for x in range(int(np.ceil(lo)), int(np.floor(hi)) + 1)]
+    else:
+        xs = [float(t) for t in ticks if lo <= t <= hi]
+    if len(xs) < 2:
+        return table
+    vals = _trace_at(img, sem, tr, xs)
+    return Table(x=xs, series={k: list(v) for k, v in vals.items()})
+
+
 def _masks(table, sem, tr, size):
     from .render import rerender
     return rerender(table, sem, tr, size)
@@ -203,6 +228,8 @@ def process_figure(crop_img: Image.Image, *, fid: str, url: callable, client=Non
     ev("measure", "running")
     tr = _ticks(crop_img, sem)
     reading_b = _trace(crop_img, sem, tr)
+    if reading_a is None:
+        reading_b = _regular_line_table(crop_img, sem, tr, reading_b)
     ev("measure", "done" if n == of else "running")
     # 3. settle disagreements by redrawing both candidates
     ev("adjudicate", "running")
@@ -221,6 +248,8 @@ def process_figure(crop_img: Image.Image, *, fid: str, url: callable, client=Non
             issues = []
         ev("verify", "done" if n == of else "running")
     status, reason = _status(points, iou, issues, sem)
+    if not _readable(table):
+        status, reason = "review", "No values could be measured. Check the chart type and axis labels, or enter the values."
     fig.update(status=status, reason=reason, iou=iou, issues=issues, rerender=url(f"{fid}-redraw.png"),
                points=[p.__dict__ for p in points], reading_b=reading_b.to_dict() if reading_b else None,
                reading_a=reading_a.to_dict() if reading_a else None)
@@ -233,10 +262,20 @@ def process_figure(crop_img: Image.Image, *, fid: str, url: callable, client=Non
     return fig, files
 
 
+def _readable(table: Table) -> bool:
+    return any(v is not None for col in table.series.values() for v in col)
+
+
 def derive(table: Table, sem: Semantics, caption: str, context: str, fid: str, url, client, ev=lambda *a, **k: None,
            n: int = 1, of: int = 1) -> tuple[dict, dict]:
-    """Everything computed from a checked table. Re-run when the reviewer accepts edited values."""
+    """Everything computed from a checked table. Re-run when the reviewer accepts edited values.
+    Each output is produced independently, so one failing step never takes the others down."""
     files = {}
+    title = _title(sem, caption)
+    if not _readable(table):
+        ev("tactile", "done" if n == of else "running")
+        return {"table": table.to_dict(), "facts": [], "description": {"long_description": "", "exploration_guide": [], "audit": [],
+                "alt_text": title[:125]}, "sound": None, "tactile": None}, files
     f = _facts(table, sem)
     ev("describe", "running")
     try:
@@ -246,19 +285,26 @@ def derive(table: Table, sem: Semantics, caption: str, context: str, fid: str, u
     ev("describe", "done" if n == of else "running")
     ev("guard", "done" if n == of else "running")
     ev("tactile", "running")
-    title = _title(sem, caption)
-    tac = _tactile(table, sem, title)
-    mapping, wav = _sound(table, sem)
-    files[f"{fid}-tactile.pdf"] = tac["pdf"]
-    files[f"{fid}-tactile.svg"] = tac["svg"].encode()
-    files[f"{fid}.brf"] = _brf(title, tac.get("key", []), desc.get("long_description", ""), table).encode("ascii", "replace")
-    files[f"{fid}.wav"] = wav
+    out = {"table": table.to_dict(), "facts": f, "description": desc, "csv": url(f"{fid}.csv")}
     files[f"{fid}.csv"] = _csv(table, sem)
+    try:
+        tac = _tactile(table, sem, title)
+        files[f"{fid}-tactile.pdf"] = tac["pdf"]
+        files[f"{fid}-tactile.svg"] = tac["svg"].encode()
+        out["tactile"] = {"preview_svg": tac.get("preview_svg") or tac["svg"], "key": tac.get("key", []), "pages": tac.get("pages", 1),
+                          "pdf": url(f"{fid}-tactile.pdf"), "svg": url(f"{fid}-tactile.svg")}
+        files[f"{fid}.brf"] = _brf(title, tac.get("key", []), desc.get("long_description", ""), table).encode("ascii", "replace")
+        out["brf"] = url(f"{fid}.brf")
+    except Exception as e:
+        out["tactile"] = {"error": f"tactile graphic not produced ({type(e).__name__}: {str(e)[:80]})"}
+    try:
+        mapping, wav = _sound(table, sem)
+        files[f"{fid}.wav"] = wav
+        out.update(sound=mapping, wav=url(f"{fid}.wav"))
+    except Exception:
+        out["sound"] = None
     ev("tactile", "done" if n == of else "running")
-    return {"table": table.to_dict(), "facts": f, "description": desc, "sound": mapping,
-            "tactile": {"preview_svg": tac.get("preview_svg") or tac["svg"], "key": tac.get("key", []), "pages": tac.get("pages", 1),
-                        "pdf": url(f"{fid}-tactile.pdf"), "svg": url(f"{fid}-tactile.svg")},
-            "brf": url(f"{fid}.brf"), "wav": url(f"{fid}.wav"), "csv": url(f"{fid}.csv")}, files
+    return out, files
 
 
 def _iou(masks: dict, img: Image.Image, sem: Semantics, tr) -> float | None:

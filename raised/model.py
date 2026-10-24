@@ -117,7 +117,10 @@ def parse_number(s: str) -> float | None:
     sup = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹⁻", "0123456789-")
     m = re.fullmatch(r"10(?:\^|\*\*)?([-\d⁰¹²³⁴-⁹⁻]+)", t)
     if m and not t.isdecimal():  # "100" is a number, "10³" and "10^3" are powers
-        return 10.0 ** int(m.group(1).translate(sup))
+        try:
+            return 10.0 ** int(m.group(1).translate(sup))
+        except ValueError:  # OCR junk such as "100-"
+            return None
     m = re.fullmatch(r"([-+]?\d*\.?\d+(?:[eE][-+]?\d+)?)([kKmMbBtT]|mn|bn)?", t)
     if not m:
         return None

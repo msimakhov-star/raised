@@ -72,10 +72,11 @@ def fx(x) -> str:
 
 
 def when(x) -> str:
+    """'in 1990' for year-like numbers, 'for Q2' for labels, 'when x is 5.5' for any other number."""
     n = parse_number(x) if isinstance(x, str) else x
     if n is None:
         return f"for {x}"
-    return f"in {fx(x)}" if float(n).is_integer() and 1000 <= n <= 2200 else f"at {fx(x)}"
+    return f"in {fx(x)}" if float(n).is_integer() and 1000 <= n <= 2200 else f"when x is {fx(x)}"
 
 
 def _pct(p: float) -> str:
@@ -156,14 +157,15 @@ def facts(table: Table, sem: Semantics) -> list[dict]:
     bar = sem.chart_type in _BARS
     ordered = sem.chart_type == "line" or (bar and bool(table.x) and all(parse_number(str(x)) is not None for x in table.x))
     fv = lambda v: format_like(v, sem)
-    series = {n: [(x, v) for x, v in zip(table.x, vs) if v is not None] for n, vs in table.series.items()}
+    vals = {n: [None if v is None or v != v else v for v in vs] for n, vs in table.series.items()}  # NaN counts as unread
+    series = {n: [(x, v) for x, v in zip(table.x, vs) if v is not None] for n, vs in vals.items()}
     out = []
     for i, (name, pts) in enumerate(series.items(), 1):
         if len(pts) >= 2:
             out += _series_facts(i, name, pts, ordered, bar, sem)
     if len(series) < 2 or sem.chart_type == "scatter":
         return out
-    cols = list(zip(*table.series.values()))  # one tuple per x
+    cols = list(zip(*vals.values()))  # one tuple per x
     if bar and not ordered:
         won = Counter(max((v, -j) for j, v in enumerate(c) if v is not None)[1] * -1
                       for c in cols if any(v is not None for v in c))

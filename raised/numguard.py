@@ -3,9 +3,12 @@
     check(text, table, facts, sem, tolerance=0.01) -> [{"text", "start", "end", "value", "unit", "sentence"}, ...]
     strip_unsupported(text, offenders) -> text without the sentences that hold an offender
 
-A mention is accepted when an allowed number of its own kind lies within `tolerance` (relative) or within the rounding
-its own precision implies ("4.5 million" accepts 4.45 to 4.55 million). Kinds keep a "45%" from being satisfied by a
-plain table value of 45:
+A mention is accepted when an allowed number of its own kind lies within the rounding its own precision implies
+("4.5 million" accepts 4.45 to 4.55 million, "4,500" accepts 4,450 to 4,550, "12" accepts 11.5 to 12.5). A hedged
+mention ("about 4,470") also gets the relative `tolerance`; an unhedged one does not, because a number printed to four
+digits claims four digits (measured on the 300 bench charts: a blanket 1% tolerance let 34% of values planted 10% off
+a table value through, precision-only lets 9% through, the rest being coincidences with other table values).
+Kinds keep a "45%" from being satisfied by a plain table value of 45:
   pct     "45%", "45 percent"   fact percentages and derived percentage changes (plus table values on a % axis)
   pp      "3 percentage points" amounts: table values, ticks, fact values and differences between them
   amount  "$3.4k", "1.2 million" same pool as pp
@@ -15,10 +18,10 @@ plain table value of 45:
 Derived values come only from facts of the same series (first, last, max, min and the start and end of every run or
 step), from ranked values and from the cross-series comparison. Nothing is derived from arbitrary pairs of table
 values, so an invented percentage cannot hide among thousands of combinations.
-Years: a four-digit mention must equal an x value or tick (to the year); the relative tolerance never applies to it.
-Ignored: figure and table references ("Figure 4.2"), ordinals ("3rd"), list markers ("1."), labels that mix letters and
-digits (series names, "Q3", "COVID-19"), and bare number words ("three lines"). Spelled-out numbers up to 99 are
-checked only when followed by a unit ("forty percent", "two million").
+Years: a four-digit mention must equal an x value or tick (to the year); tolerance never applies to it.
+Ignored: figure and table references ("Figure 4.2"), powers of ten (10^3), ordinals ("3rd"), list markers ("1."),
+labels that mix letters and digits (series names, "Q3", "COVID-19"), and bare number words ("three lines"). Spelled-out
+numbers up to 99 are checked only when followed by a unit ("forty percent", "two million").
 """
 from __future__ import annotations
 
@@ -38,7 +41,7 @@ _WORDS.update({w: 10 * i for i, w in enumerate("twenty thirty forty fifty sixty 
 _WORD = "|".join(sorted(_WORDS, key=len, reverse=True))
 
 _UNIT = re.compile(r"""(?:
-    (?P<pct>%|\s?(?:percent|per\s?cent)\b)
+    (?P<pct>\s?%|\s?(?:percent|per\s?cent)\b)
   | (?P<pp>\s?(?:percentage\s+points?|pp)\b)
   | (?P<mult>\s?(?:thousand|million|billion|trillion|bn|mn)\b|[kKmMbBtT]\b)
   | (?P<ratio>x\b|\s?times\b|-?fold\b)
@@ -48,8 +51,9 @@ _UNIT = re.compile(r"""(?:
 _MENTION = re.compile(
     r"(?P<cur>[£$€])?(?<![\w.])(?-i:(?<![A-Z]-))(?P<num>\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:\.\d+)?|\.\d+)"
     rf"|(?<![\w-])(?P<word>(?:{_WORD})(?:[- ](?:{'|'.join(_ONES)}))?)(?=\s)", re.I)
-_REFERENCE = re.compile(r"\b(?:figures?|fig\.?|tables?|charts?|graphs?|panels?|pages?|sections?|chapters?|exhibits?|box(?:es)?)"
+_REFERENCE = re.compile(r"10(?:\^\(?-?\d+\)?|[⁰¹²³⁴⁵⁶⁷⁸⁹⁻]+)|\b(?:figures?|fig\.?|tables?|charts?|graphs?|panels?|pages?|sections?|chapters?|exhibits?|box(?:es)?)"
                         r"\s+\d+(?:\.\d+)*[a-z]?\b|^\s*\d+[.)]\s", re.I | re.M)
+_HEDGE = re.compile(r"(?:about|around|roughly|approximately|approx\.?|nearly|almost|close to|circa|~)\s*$", re.I)
 _ORDINAL = re.compile(r"(?:st|nd|rd|th)\b", re.I)
 _END = re.compile(r"(?<!\be\.g)(?<!\bi\.e)(?<!\bvs)(?<!\bapprox)(?<!\bU\.S)(?<!\bU\.K)(?<!\bNo)[.!?]+[\"”')\]]*(?=\s|$)|\n{2,}")
 
@@ -75,9 +79,20 @@ def _label_masks(sem: Semantics | None) -> list[re.Pattern]:
     return [re.compile(re.escape(n), re.I) for n in sorted(names, key=len, reverse=True)]
 
 
+def _half(num: str) -> float:
+    """Half the unit of the last printed significant digit: '4.5' -> 0.05, '12' -> 0.5, '4,500' -> 50.
+    Trailing zeros of a number of 1,000 or more are placeholders, except in year-like numbers ('2000')."""
+    if "." in num:
+        return 0.5 * 10 ** -len(num.partition(".")[2])
+    digits = num.replace(",", "")
+    year = "," not in num and len(digits) == 4 and 1000 <= int(digits) <= 2200
+    zeros = len(digits) - len(digits.rstrip("0")) if len(digits) >= 4 and not year else 0
+    return 0.5 * 10 ** (zeros if zeros >= 2 else 0)
+
+
 def mentions(text: str, sem: Semantics | None = None) -> list[dict]:
-    """Every checkable number in `text`: {text, start, end, value, dec, mult, unit}. `value` includes the multiplier
-    (1.2 million -> 1.2e6) and ignores the sign; `dec` counts the decimals as typed."""
+    """Every checkable number in `text`: {text, start, end, value, half, unit, hedged}. `value` includes the multiplier
+    (1.2 million -> 1.2e6) and ignores the sign; `half` is the rounding the mention implies, in the same units."""
     masked = text
     for pat in [*_label_masks(sem), _REFERENCE]:
         masked = pat.sub(lambda m: " " * len(m.group()), masked)
@@ -86,11 +101,11 @@ def mentions(text: str, sem: Semantics | None = None) -> list[dict]:
         end = m.end()
         if m["word"]:
             tens, *ones = re.split(r"[- ]", m["word"].lower())
-            value, dec = _WORDS[tens] + sum(_WORDS[o] for o in ones), 0
+            value, num = _WORDS[tens] + sum(_WORDS[o] for o in ones), "0"
         else:
             if _ORDINAL.match(masked, end):
                 continue
-            value, dec = float(m["num"].replace(",", "")), len(m["num"].partition(".")[2])
+            value, num = float(m["num"].replace(",", "")), m["num"]
         u = _UNIT.match(masked, end)
         kind = u.lastgroup if u else None
         if m["word"] and kind not in ("pct", "pp", "mult"):
@@ -98,8 +113,9 @@ def mentions(text: str, sem: Semantics | None = None) -> list[dict]:
         mult = _MULT[u["mult"].strip().lower()] if kind == "mult" else 1.0
         unit = kind if kind in ("pct", "pp", "ratio", "span") else "amount" if m["cur"] or kind == "mult" else "plain"
         end = u.end() if u else end
-        out.append({"text": text[m.start():end], "start": m.start(), "end": end, "value": value * mult, "dec": dec,
-                    "mult": mult, "unit": unit})
+        out.append({"text": text[m.start():end], "start": m.start(), "end": end, "value": value * mult,
+                    "half": _half(num) * mult, "mult": mult, "unit": unit,
+                    "hedged": bool(_HEDGE.search(text[max(0, m.start() - 14):m.start()]))})
     return out
 
 
@@ -145,7 +161,7 @@ def _flatten(v, key=""):
 def _pools(table: Table, facts: list[dict], sem: Semantics) -> dict:
     nums = lambda ts: [abs(n) for t in ts if (n := parse_number(str(t))) is not None]
     other_ticks = sem.y_ticks if sem.value_axis == "x" else sem.x_ticks
-    amounts = [abs(float(v)) for vs in table.series.values() for v in vs if v is not None] + nums(value_ticks(sem))
+    amounts = [abs(float(v)) for vs in table.series.values() for v in vs if v is not None and v == v] + nums(value_ticks(sem))
     xs, pcts = nums(other_ticks) + nums(table.x), []
     counts = [len(table.series), len(table.x), len(sem.categories)] + [sum(v is not None for v in vs) for vs in table.series.values()]
     for f in facts:
@@ -163,8 +179,8 @@ def _pools(table: Table, facts: list[dict], sem: Semantics) -> dict:
 
 
 def _supported(m: dict, pools: dict, scale: float, tol: float) -> bool:
-    unit, v, half = m["unit"], m["value"], 0.5 * 10 ** -m["dec"] * m["mult"]
-    year = unit == "plain" and m["dec"] == 0 and 1000 <= v <= 2200 and "," not in m["text"]
+    unit, v, half = m["unit"], m["value"], m["half"]
+    year = unit == "plain" and 1000 <= v <= 2200 and half == 0.5 and m["text"].isdigit()
     if year and any(abs(v - p) < 1.0 for p in pools["x"]):
         return True
     if unit == "span" and "decade" in m["text"].lower():
@@ -175,7 +191,7 @@ def _supported(m: dict, pools: dict, scale: float, tol: float) -> bool:
             cands.append((v / m["mult"], half / m["mult"]))
         elif scale != 1.0:    # "19.4" quoted in the axis unit (millions) while the table holds 19,400,000
             cands.append((v * scale, half * scale))
-    t = 0.0 if year else tol
+    t = tol if m["hedged"] and not year else 0.0
     if any(abs(c - p) <= max(t * p, h) + 1e-9 * p for c, h in cands for p in pools[unit]):
         return True
     return unit == "plain" and not year and any(abs(v - p) <= half + 1e-9 for p in pools["x"])

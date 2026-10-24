@@ -1,0 +1,2112 @@
+{
+ "job": "sample-synthetic",
+ "recorded": true,
+ "document": {
+  "name": "synthetic charts"
+ },
+ "figures": [
+  {
+   "id": "f1",
+   "page": null,
+   "figure_number": "",
+   "caption": "Unemployment rate by country",
+   "chart_type": "line",
+   "title": "Unemployment rate by country",
+   "semantics": {
+    "chart_type": "line",
+    "title": "Unemployment rate by country",
+    "x_title": "Year",
+    "y_title": "Unemployment rate",
+    "x_scale": "linear",
+    "y_scale": "linear",
+    "x_ticks": [
+     "1986",
+     "1988",
+     "1990",
+     "1992",
+     "1994"
+    ],
+    "y_ticks": [
+     "35%",
+     "40%",
+     "45%",
+     "50%",
+     "55%"
+    ],
+    "categories": [],
+    "series": [
+     {
+      "name": "Germany",
+      "color": "teal",
+      "style": "solid",
+      "marker": ""
+     },
+     {
+      "name": "Japan",
+      "color": "grey",
+      "style": "dashed",
+      "marker": ""
+     },
+     {
+      "name": "Spain",
+      "color": "red",
+      "style": "dotted",
+      "marker": "s"
+     },
+     {
+      "name": "Poland",
+      "color": "black",
+      "style": "solid",
+      "marker": "^"
+     }
+    ],
+    "legend": [
+     "Germany",
+     "Japan",
+     "Spain",
+     "Poland"
+    ],
+    "source": "Source: national statistics office (synthetic)",
+    "caption": "Unemployment rate by country"
+   },
+   "image": "/samples/synthetic/f1-chart.png",
+   "agreement": {},
+   "status": "verified",
+   "reason": "Both readings agree and the redraw matches the original.",
+   "iou": 0.6139400969159818,
+   "issues": [],
+   "rerender": "/samples/synthetic/f1-redraw.png",
+   "points": [
+    {
+     "series": "Germany",
+     "x": 1985.0,
+     "value": 42.663486934124634,
+     "reading_a": null,
+     "reading_b": 42.663486934124634,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1986.0,
+     "value": 43.48632384193009,
+     "reading_a": null,
+     "reading_b": 43.48632384193009,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1987.0,
+     "value": 43.90188185140282,
+     "reading_a": null,
+     "reading_b": 43.90188185140282,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1988.0,
+     "value": 43.55730036660305,
+     "reading_a": null,
+     "reading_b": 43.55730036660305,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1989.0,
+     "value": 44.04515767774663,
+     "reading_a": null,
+     "reading_b": 44.04515767774663,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1990.0,
+     "value": 33.95889412439512,
+     "reading_a": null,
+     "reading_b": 33.95889412439512,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1991.0,
+     "value": 33.84877373107552,
+     "reading_a": null,
+     "reading_b": 33.84877373107552,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1992.0,
+     "value": 32.47849946901667,
+     "reading_a": null,
+     "reading_b": 32.47849946901667,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1993.0,
+     "value": 33.06808803258153,
+     "reading_a": null,
+     "reading_b": 33.06808803258153,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1994.0,
+     "value": 33.76065573841602,
+     "reading_a": null,
+     "reading_b": 33.76065573841602,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Germany",
+     "x": 1995.0,
+     "value": 32.84843548360446,
+     "reading_a": null,
+     "reading_b": 32.84843548360446,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1985.0,
+     "value": 45.174873660103756,
+     "reading_a": null,
+     "reading_b": 45.174873660103756,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1986.0,
+     "value": 48.77136871063682,
+     "reading_a": null,
+     "reading_b": 48.77136871063682,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1987.0,
+     "value": 49.728746054547486,
+     "reading_a": null,
+     "reading_b": 49.728746054547486,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1988.0,
+     "value": 45.61613711410258,
+     "reading_a": null,
+     "reading_b": 45.61613711410258,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1989.0,
+     "value": 40.31137269695793,
+     "reading_a": null,
+     "reading_b": 40.31137269695793,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1990.0,
+     "value": 38.732809417005875,
+     "reading_a": null,
+     "reading_b": 38.732809417005875,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1991.0,
+     "value": 42.53210915047176,
+     "reading_a": null,
+     "reading_b": 42.53210915047176,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1992.0,
+     "value": 46.56791006609305,
+     "reading_a": null,
+     "reading_b": 46.56791006609305,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1993.0,
+     "value": 50.538370843744055,
+     "reading_a": null,
+     "reading_b": 50.538370843744055,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1994.0,
+     "value": 47.36583378247337,
+     "reading_a": null,
+     "reading_b": 47.36583378247337,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Japan",
+     "x": 1995.0,
+     "value": 40.91248220274099,
+     "reading_a": null,
+     "reading_b": 40.91248220274099,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1985.0,
+     "value": 50.455204361359925,
+     "reading_a": null,
+     "reading_b": 50.455204361359925,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1986.0,
+     "value": 53.49081847596483,
+     "reading_a": null,
+     "reading_b": 53.49081847596483,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1987.0,
+     "value": 53.66671177984809,
+     "reading_a": null,
+     "reading_b": 53.66671177984809,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1988.0,
+     "value": 55.172546548556035,
+     "reading_a": null,
+     "reading_b": 55.172546548556035,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1989.0,
+     "value": 56.37938564142032,
+     "reading_a": null,
+     "reading_b": 56.37938564142032,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1990.0,
+     "value": 53.50600768254178,
+     "reading_a": null,
+     "reading_b": 53.50600768254178,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1991.0,
+     "value": 49.557100556014376,
+     "reading_a": null,
+     "reading_b": 49.557100556014376,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1992.0,
+     "value": 51.13109130962842,
+     "reading_a": null,
+     "reading_b": 51.13109130962842,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1993.0,
+     "value": 47.55407367557602,
+     "reading_a": null,
+     "reading_b": 47.55407367557602,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1994.0,
+     "value": 46.99958592971525,
+     "reading_a": null,
+     "reading_b": 46.99958592971525,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Spain",
+     "x": 1995.0,
+     "value": 52.237065230439214,
+     "reading_a": null,
+     "reading_b": 52.237065230439214,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1985.0,
+     "value": 43.350283137023986,
+     "reading_a": null,
+     "reading_b": 43.350283137023986,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1986.0,
+     "value": 43.36435094415732,
+     "reading_a": null,
+     "reading_b": 43.36435094415732,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1987.0,
+     "value": 47.96662413411424,
+     "reading_a": null,
+     "reading_b": 47.96662413411424,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1988.0,
+     "value": 47.941760985462835,
+     "reading_a": null,
+     "reading_b": 47.941760985462835,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1989.0,
+     "value": 42.0674159217618,
+     "reading_a": null,
+     "reading_b": 42.0674159217618,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1990.0,
+     "value": 40.66806410063668,
+     "reading_a": null,
+     "reading_b": 40.66806410063668,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1991.0,
+     "value": 37.585069683328015,
+     "reading_a": null,
+     "reading_b": 37.585069683328015,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1992.0,
+     "value": 35.04643467398421,
+     "reading_a": null,
+     "reading_b": 35.04643467398421,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1993.0,
+     "value": 36.30456445951668,
+     "reading_a": null,
+     "reading_b": 36.30456445951668,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1994.0,
+     "value": 34.79916272994072,
+     "reading_a": null,
+     "reading_b": 34.79916272994072,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Poland",
+     "x": 1995.0,
+     "value": 38.36814139120055,
+     "reading_a": null,
+     "reading_b": 38.36814139120055,
+     "status": "pixel",
+     "note": ""
+    }
+   ],
+   "reading_b": {
+    "x": [
+     1985.0,
+     1986.0,
+     1987.0,
+     1988.0,
+     1989.0,
+     1990.0,
+     1991.0,
+     1992.0,
+     1993.0,
+     1994.0,
+     1995.0
+    ],
+    "series": {
+     "Germany": [
+      42.663486934124634,
+      43.48632384193009,
+      43.90188185140282,
+      43.55730036660305,
+      44.04515767774663,
+      33.95889412439512,
+      33.84877373107552,
+      32.47849946901667,
+      33.06808803258153,
+      33.76065573841602,
+      32.84843548360446
+     ],
+     "Japan": [
+      45.174873660103756,
+      48.77136871063682,
+      49.728746054547486,
+      45.61613711410258,
+      40.31137269695793,
+      38.732809417005875,
+      42.53210915047176,
+      46.56791006609305,
+      50.538370843744055,
+      47.36583378247337,
+      40.91248220274099
+     ],
+     "Spain": [
+      50.455204361359925,
+      53.49081847596483,
+      53.66671177984809,
+      55.172546548556035,
+      56.37938564142032,
+      53.50600768254178,
+      49.557100556014376,
+      51.13109130962842,
+      47.55407367557602,
+      46.99958592971525,
+      52.237065230439214
+     ],
+     "Poland": [
+      43.350283137023986,
+      43.36435094415732,
+      47.96662413411424,
+      47.941760985462835,
+      42.0674159217618,
+      40.66806410063668,
+      37.585069683328015,
+      35.04643467398421,
+      36.30456445951668,
+      34.79916272994072,
+      38.36814139120055
+     ]
+    }
+   },
+   "reading_a": null,
+   "table": {
+    "x": [
+     1985.0,
+     1986.0,
+     1987.0,
+     1988.0,
+     1989.0,
+     1990.0,
+     1991.0,
+     1992.0,
+     1993.0,
+     1994.0,
+     1995.0
+    ],
+    "series": {
+     "Germany": [
+      42.663486934124634,
+      43.48632384193009,
+      43.90188185140282,
+      43.55730036660305,
+      44.04515767774663,
+      33.95889412439512,
+      33.84877373107552,
+      32.47849946901667,
+      33.06808803258153,
+      33.76065573841602,
+      32.84843548360446
+     ],
+     "Japan": [
+      45.174873660103756,
+      48.77136871063682,
+      49.728746054547486,
+      45.61613711410258,
+      40.31137269695793,
+      38.732809417005875,
+      42.53210915047176,
+      46.56791006609305,
+      50.538370843744055,
+      47.36583378247337,
+      40.91248220274099
+     ],
+     "Spain": [
+      50.455204361359925,
+      53.49081847596483,
+      53.66671177984809,
+      55.172546548556035,
+      56.37938564142032,
+      53.50600768254178,
+      49.557100556014376,
+      51.13109130962842,
+      47.55407367557602,
+      46.99958592971525,
+      52.237065230439214
+     ],
+     "Poland": [
+      43.350283137023986,
+      43.36435094415732,
+      47.96662413411424,
+      47.941760985462835,
+      42.0674159217618,
+      40.66806410063668,
+      37.585069683328015,
+      35.04643467398421,
+      36.30456445951668,
+      34.79916272994072,
+      38.36814139120055
+     ]
+    }
+   },
+   "facts": [
+    {
+     "id": "S1.max",
+     "kind": "max",
+     "text": "Germany peaks at 44% in 1989.",
+     "values": {
+      "series": "Germany",
+      "x": 1989.0,
+      "value": 44.04515767774663
+     }
+    },
+    {
+     "id": "S1.min",
+     "kind": "min",
+     "text": "Germany is lowest at 32.5% in 1992.",
+     "values": {
+      "series": "Germany",
+      "x": 1992.0,
+      "value": 32.47849946901667
+     }
+    },
+    {
+     "id": "S1.first",
+     "kind": "first",
+     "text": "Germany starts at 42.7% in 1985.",
+     "values": {
+      "series": "Germany",
+      "x": 1985.0,
+      "value": 42.663486934124634
+     }
+    },
+    {
+     "id": "S1.last",
+     "kind": "last",
+     "text": "Germany ends at 32.8% in 1995.",
+     "values": {
+      "series": "Germany",
+      "x": 1995.0,
+      "value": 32.84843548360446
+     }
+    },
+    {
+     "id": "S1.change",
+     "kind": "change",
+     "text": "Germany fell by 9.82 percentage points (23%) between 1985 and 1995.",
+     "values": {
+      "series": "Germany",
+      "x_from": 1985.0,
+      "x_to": 1995.0,
+      "start": 42.663486934124634,
+      "end": 32.84843548360446,
+      "change": 9.815051450520173,
+      "pct": 23.005741339603322,
+      "direction": "down"
+     }
+    },
+    {
+     "id": "S1.run1",
+     "kind": "run",
+     "text": "Germany rises steadily from 42.7% in 1985 to 43.9% in 1987.",
+     "values": {
+      "series": "Germany",
+      "direction": "up",
+      "x_from": 1985.0,
+      "x_to": 1987.0,
+      "start": 42.663486934124634,
+      "end": 43.90188185140282,
+      "points": 3
+     }
+    },
+    {
+     "id": "S1.run2",
+     "kind": "run",
+     "text": "Germany falls steadily from 44% in 1989 to 32.5% in 1992.",
+     "values": {
+      "series": "Germany",
+      "direction": "down",
+      "x_from": 1989.0,
+      "x_to": 1992.0,
+      "start": 44.04515767774663,
+      "end": 32.47849946901667,
+      "points": 4
+     }
+    },
+    {
+     "id": "S1.run3",
+     "kind": "run",
+     "text": "Germany rises steadily from 32.5% in 1992 to 33.8% in 1994.",
+     "values": {
+      "series": "Germany",
+      "direction": "up",
+      "x_from": 1992.0,
+      "x_to": 1994.0,
+      "start": 32.47849946901667,
+      "end": 33.76065573841602,
+      "points": 3
+     }
+    },
+    {
+     "id": "S1.step",
+     "kind": "step",
+     "text": "The largest single step for Germany is a fall of 10.1 percentage points between 1989 and 1990.",
+     "values": {
+      "series": "Germany",
+      "x_from": 1989.0,
+      "x_to": 1990.0,
+      "start": 44.04515767774663,
+      "end": 33.95889412439512,
+      "change": 10.086263553351507,
+      "direction": "down"
+     }
+    },
+    {
+     "id": "S2.max",
+     "kind": "max",
+     "text": "Japan peaks at 50.5% in 1993.",
+     "values": {
+      "series": "Japan",
+      "x": 1993.0,
+      "value": 50.538370843744055
+     }
+    },
+    {
+     "id": "S2.min",
+     "kind": "min",
+     "text": "Japan is lowest at 38.7% in 1990.",
+     "values": {
+      "series": "Japan",
+      "x": 1990.0,
+      "value": 38.732809417005875
+     }
+    },
+    {
+     "id": "S2.first",
+     "kind": "first",
+     "text": "Japan starts at 45.2% in 1985.",
+     "values": {
+      "series": "Japan",
+      "x": 1985.0,
+      "value": 45.174873660103756
+     }
+    },
+    {
+     "id": "S2.last",
+     "kind": "last",
+     "text": "Japan ends at 40.9% in 1995.",
+     "values": {
+      "series": "Japan",
+      "x": 1995.0,
+      "value": 40.91248220274099
+     }
+    },
+    {
+     "id": "S2.change",
+     "kind": "change",
+     "text": "Japan fell by 4.26 percentage points (9.4%) between 1985 and 1995.",
+     "values": {
+      "series": "Japan",
+      "x_from": 1985.0,
+      "x_to": 1995.0,
+      "start": 45.174873660103756,
+      "end": 40.91248220274099,
+      "change": 4.262391457362767,
+      "pct": 9.435314616335283,
+      "direction": "down"
+     }
+    },
+    {
+     "id": "S2.run1",
+     "kind": "run",
+     "text": "Japan rises steadily from 45.2% in 1985 to 49.7% in 1987.",
+     "values": {
+      "series": "Japan",
+      "direction": "up",
+      "x_from": 1985.0,
+      "x_to": 1987.0,
+      "start": 45.174873660103756,
+      "end": 49.728746054547486,
+      "points": 3
+     }
+    },
+    {
+     "id": "S2.run2",
+     "kind": "run",
+     "text": "Japan falls steadily from 49.7% in 1987 to 38.7% in 1990.",
+     "values": {
+      "series": "Japan",
+      "direction": "down",
+      "x_from": 1987.0,
+      "x_to": 1990.0,
+      "start": 49.728746054547486,
+      "end": 38.732809417005875,
+      "points": 4
+     }
+    },
+    {
+     "id": "S2.run3",
+     "kind": "run",
+     "text": "Japan rises steadily from 38.7% in 1990 to 50.5% in 1993.",
+     "values": {
+      "series": "Japan",
+      "direction": "up",
+      "x_from": 1990.0,
+      "x_to": 1993.0,
+      "start": 38.732809417005875,
+      "end": 50.538370843744055,
+      "points": 4
+     }
+    },
+    {
+     "id": "S2.run4",
+     "kind": "run",
+     "text": "Japan falls steadily from 50.5% in 1993 to 40.9% in 1995.",
+     "values": {
+      "series": "Japan",
+      "direction": "down",
+      "x_from": 1993.0,
+      "x_to": 1995.0,
+      "start": 50.538370843744055,
+      "end": 40.91248220274099,
+      "points": 3
+     }
+    },
+    {
+     "id": "S2.step",
+     "kind": "step",
+     "text": "The largest single step for Japan is a fall of 6.45 percentage points between 1994 and 1995.",
+     "values": {
+      "series": "Japan",
+      "x_from": 1994.0,
+      "x_to": 1995.0,
+      "start": 47.36583378247337,
+      "end": 40.91248220274099,
+      "change": 6.453351579732384,
+      "direction": "down"
+     }
+    },
+    {
+     "id": "S3.max",
+     "kind": "max",
+     "text": "Spain peaks at 56.4% in 1989.",
+     "values": {
+      "series": "Spain",
+      "x": 1989.0,
+      "value": 56.37938564142032
+     }
+    },
+    {
+     "id": "S3.min",
+     "kind": "min",
+     "text": "Spain is lowest at 47% in 1994.",
+     "values": {
+      "series": "Spain",
+      "x": 1994.0,
+      "value": 46.99958592971525
+     }
+    },
+    {
+     "id": "S3.first",
+     "kind": "first",
+     "text": "Spain starts at 50.5% in 1985.",
+     "values": {
+      "series": "Spain",
+      "x": 1985.0,
+      "value": 50.455204361359925
+     }
+    },
+    {
+     "id": "S3.last",
+     "kind": "last",
+     "text": "Spain ends at 52.2% in 1995.",
+     "values": {
+      "series": "Spain",
+      "x": 1995.0,
+      "value": 52.237065230439214
+     }
+    },
+    {
+     "id": "S3.change",
+     "kind": "change",
+     "text": "Spain rose by 1.78 percentage points (3.5%) between 1985 and 1995.",
+     "values": {
+      "series": "Spain",
+      "x_from": 1985.0,
+      "x_to": 1995.0,
+      "start": 50.455204361359925,
+      "end": 52.237065230439214,
+      "change": 1.7818608690792885,
+      "pct": 3.5315700166777835,
+      "direction": "up"
+     }
+    },
+    {
+     "id": "S3.run1",
+     "kind": "run",
+     "text": "Spain rises steadily from 50.5% in 1985 to 56.4% in 1989.",
+     "values": {
+      "series": "Spain",
+      "direction": "up",
+      "x_from": 1985.0,
+      "x_to": 1989.0,
+      "start": 50.455204361359925,
+      "end": 56.37938564142032,
+      "points": 5
+     }
+    },
+    {
+     "id": "S3.run2",
+     "kind": "run",
+     "text": "Spain falls steadily from 56.4% in 1989 to 49.6% in 1991.",
+     "values": {
+      "series": "Spain",
+      "direction": "down",
+      "x_from": 1989.0,
+      "x_to": 1991.0,
+      "start": 56.37938564142032,
+      "end": 49.557100556014376,
+      "points": 3
+     }
+    },
+    {
+     "id": "S3.run3",
+     "kind": "run",
+     "text": "Spain falls steadily from 51.1% in 1992 to 47% in 1994.",
+     "values": {
+      "series": "Spain",
+      "direction": "down",
+      "x_from": 1992.0,
+      "x_to": 1994.0,
+      "start": 51.13109130962842,
+      "end": 46.99958592971525,
+      "points": 3
+     }
+    },
+    {
+     "id": "S3.step",
+     "kind": "step",
+     "text": "The largest single step for Spain is a rise of 5.24 percentage points between 1994 and 1995.",
+     "values": {
+      "series": "Spain",
+      "x_from": 1994.0,
+      "x_to": 1995.0,
+      "start": 46.99958592971525,
+      "end": 52.237065230439214,
+      "change": 5.237479300723962,
+      "direction": "up"
+     }
+    },
+    {
+     "id": "S4.max",
+     "kind": "max",
+     "text": "Poland peaks at 48% in 1987.",
+     "values": {
+      "series": "Poland",
+      "x": 1987.0,
+      "value": 47.96662413411424
+     }
+    },
+    {
+     "id": "S4.min",
+     "kind": "min",
+     "text": "Poland is lowest at 34.8% in 1994.",
+     "values": {
+      "series": "Poland",
+      "x": 1994.0,
+      "value": 34.79916272994072
+     }
+    },
+    {
+     "id": "S4.first",
+     "kind": "first",
+     "text": "Poland starts at 43.4% in 1985.",
+     "values": {
+      "series": "Poland",
+      "x": 1985.0,
+      "value": 43.350283137023986
+     }
+    },
+    {
+     "id": "S4.last",
+     "kind": "last",
+     "text": "Poland ends at 38.4% in 1995.",
+     "values": {
+      "series": "Poland",
+      "x": 1995.0,
+      "value": 38.36814139120055
+     }
+    },
+    {
+     "id": "S4.change",
+     "kind": "change",
+     "text": "Poland fell by 4.98 percentage points (11.5%) between 1985 and 1995.",
+     "values": {
+      "series": "Poland",
+      "x_from": 1985.0,
+      "x_to": 1995.0,
+      "start": 43.350283137023986,
+      "end": 38.36814139120055,
+      "change": 4.982141745823434,
+      "pct": 11.492754799491395,
+      "direction": "down"
+     }
+    },
+    {
+     "id": "S4.run1",
+     "kind": "run",
+     "text": "Poland rises steadily from 43.4% in 1985 to 48% in 1987.",
+     "values": {
+      "series": "Poland",
+      "direction": "up",
+      "x_from": 1985.0,
+      "x_to": 1987.0,
+      "start": 43.350283137023986,
+      "end": 47.96662413411424,
+      "points": 3
+     }
+    },
+    {
+     "id": "S4.run2",
+     "kind": "run",
+     "text": "Poland falls steadily from 48% in 1987 to 35% in 1992.",
+     "values": {
+      "series": "Poland",
+      "direction": "down",
+      "x_from": 1987.0,
+      "x_to": 1992.0,
+      "start": 47.96662413411424,
+      "end": 35.04643467398421,
+      "points": 6
+     }
+    },
+    {
+     "id": "S4.step",
+     "kind": "step",
+     "text": "The largest single step for Poland is a fall of 5.87 percentage points between 1988 and 1989.",
+     "values": {
+      "series": "Poland",
+      "x_from": 1988.0,
+      "x_to": 1989.0,
+      "start": 47.941760985462835,
+      "end": 42.0674159217618,
+      "change": 5.8743450637010355,
+      "direction": "down"
+     }
+    },
+    {
+     "id": "G.last_compare",
+     "kind": "compare_last",
+     "text": "In 1995, Spain is highest at 52.2%, ahead of Japan at 40.9%; Germany is lowest at 32.8%.",
+     "values": {
+      "x": 1995.0,
+      "gap": 11.324583027698225,
+      "order": [
+       {
+        "series": "Spain",
+        "value": 52.237065230439214
+       },
+       {
+        "series": "Japan",
+        "value": 40.91248220274099
+       },
+       {
+        "series": "Poland",
+        "value": 38.36814139120055
+       },
+       {
+        "series": "Germany",
+        "value": 32.84843548360446
+       }
+      ]
+     }
+    }
+   ],
+   "description": {
+    "long_description": "This is a line chart titled \"Unemployment rate by country\". The horizontal axis shows Year, from 1986 to 1994. The vertical axis shows Unemployment rate, from 35% to 55%. There are four series: Germany, Japan, Spain and Poland.\n\nGermany fell by 9.82 percentage points (23%) between 1985 and 1995. Germany peaks at 44% in 1989. Germany is lowest at 32.5% in 1992.\n\nJapan fell by 4.26 percentage points (9.4%) between 1985 and 1995. Japan peaks at 50.5% in 1993. Japan is lowest at 38.7% in 1990.\n\nSpain rose by 1.78 percentage points (3.5%) between 1985 and 1995. Spain peaks at 56.4% in 1989. Spain is lowest at 47% in 1994.\n\nPoland fell by 4.98 percentage points (11.5%) between 1985 and 1995. Poland peaks at 48% in 1987. Poland is lowest at 34.8% in 1994.\n\nIn 1995, Spain is highest at 52.2%, ahead of Japan at 40.9%; Germany is lowest at 32.8%.",
+    "exploration_guide": [
+     "Press Home to hear the first point, then the Right Arrow key to move along one point at a time. Germany starts at 42.7% in 1985.",
+     "Press End to jump to the last point. Germany ends at 32.8% in 1995.",
+     "Listen for the highest value. Germany peaks at 44% in 1989.",
+     "Press S to switch between the four series, and Space to play the whole series as a tone that rises and falls with the value."
+    ],
+    "audit": [],
+    "alt_text": "Line chart of Unemployment rate by country: Germany falls from 42.7% in 1985 to 32.8% in 1995."
+   },
+   "csv": "/samples/synthetic/f1.csv",
+   "tactile": {
+    "preview_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 11.5 33.60\" role=\"img\" aria-label=\"Unemployment rate by country, tactile graphic preview, 3 pages\"><defs><filter id=\"raised-swell\" filterUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"11.5\" height=\"11.0\" color-interpolation-filters=\"sRGB\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"0.012\" result=\"h\"/><feDiffuseLighting in=\"h\" surfaceScale=\"3\" diffuseConstant=\"1.25\" lighting-color=\"#fff\" result=\"lit\"><feDistantLight azimuth=\"225\" elevation=\"50\"/></feDiffuseLighting><feFlood flood-color=\"#f6f1e6\" result=\"paper\"/><feComposite in=\"SourceGraphic\" in2=\"paper\" operator=\"over\" result=\"printed\"/><feBlend in=\"lit\" in2=\"printed\" mode=\"multiply\"/></filter></defs><g transform=\"translate(0 0.00)\"><clipPath id=\"rings-c4da3cdc-0\"><path clip-rule=\"evenodd\" d=\"M0,0H11.5V11.0H0Z\"/></clipPath><rect width=\"11.5\" height=\"11.0\" fill=\"#f6f1e6\" stroke=\"#bbb\" stroke-width=\"0.02\"/><g filter=\"url(#raised-swell)\" fill=\"#5b5852\"><g clip-path=\"url(#rings-c4da3cdc-0)\"><g><title>Unemployment rate by country</title><circle cx=\"2.6855\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.8905\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.8905\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.1355\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.1355\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.6255\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.0235\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.0235\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.5855\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.3205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.7125\" r=\"0.0285\"/></g><g><title>Key:</title><circle cx=\"2.4405\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.1555\" cy=\"1.4205\" r=\"0.0285\"/></g><g><title>solid line (part 1): Germany</title><circle cx=\"2.1955\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"2.1285\" r=\"0.0285\"/></g><polyline points=\"0.8500,2.2205 1.8500,2.2205\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0556\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g><title>dashed line (part 1): Japan</title><circle cx=\"2.1955\" cy=\"2.7125\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"2.6205\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"2.6205\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.6205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.7125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"2.7125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"2.5285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"2.6205\" r=\"0.0285\"/></g><polyline points=\"0.8500,2.6205 1.8500,2.6205\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\" stroke-dasharray=\"0.300 0.150\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g><title>solid line (part 2): Spain</title><circle cx=\"2.1955\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.0205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"2.9285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"2.9285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.0205\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"2.9285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.9285\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"3.0205\" r=\"0.0285\"/></g><polyline points=\"0.8500,3.0205 1.8500,3.0205\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0556\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g><title>dashed line (part 2): Poland</title><circle cx=\"2.1955\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.4205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"3.4205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"3.4205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"3.4205\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"3.5125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"3.3285\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"3.4205\" r=\"0.0285\"/></g><polyline points=\"0.8500,3.4205 1.8500,3.4205\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\" stroke-dasharray=\"0.300 0.150\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/></g></g></g><g transform=\"translate(0 11.30)\"><clipPath id=\"rings-a7fca427-1\"><path clip-rule=\"evenodd\" d=\"M0,0H11.5V11.0H0Z\"/></clipPath><rect width=\"11.5\" height=\"11.0\" fill=\"#f6f1e6\" stroke=\"#bbb\" stroke-width=\"0.02\"/><g filter=\"url(#raised-swell)\" fill=\"#5b5852\"><g clip-path=\"url(#rings-a7fca427-1)\"><g><title>Unemployment rate by country (part 1 of 2)</title><circle cx=\"0.9705\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.3805\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.3805\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.3805\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.5135\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.5135\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.5135\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.6055\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.3405\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.5855\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.7185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.2085\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.2085\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.2085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.3005\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.3005\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.6985\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.7905\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.7905\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.7905\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.9435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.9435\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"10.2805\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"10.4335\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"10.5255\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"10.5255\" cy=\"0.6205\" r=\"0.0285\"/></g><g><title>Unemployment rate</title><circle cx=\"0.9705\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"1.4205\" r=\"0.0285\"/></g><line x1=\"2.3540\" y1=\"9.3424\" x2=\"2.3540\" y2=\"1.8205\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"2.3540\" y1=\"9.3250\" x2=\"8.1500\" y2=\"9.3250\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"2.1040\" y1=\"8.1518\" x2=\"2.6040\" y2=\"8.1518\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"6.5690\" x2=\"2.6040\" y2=\"6.5690\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"4.9861\" x2=\"2.6040\" y2=\"4.9861\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"3.4033\" x2=\"2.6040\" y2=\"3.4033\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"1.8205\" x2=\"2.6040\" y2=\"1.8205\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>55%</title><circle cx=\"0.8785\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.9125\" r=\"0.0285\"/></g><g><title>50%</title><circle cx=\"0.8785\" cy=\"3.4953\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"3.3113\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"3.4033\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"3.4953\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.3113\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"3.4033\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"3.4033\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.3113\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.4033\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"3.3113\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"3.4953\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"3.4953\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.4033\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.4953\" r=\"0.0285\"/></g><g><title>45%</title><circle cx=\"0.8785\" cy=\"5.0781\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"4.8941\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"4.9861\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"5.0781\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"4.8941\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"4.8941\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"4.9861\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"4.8941\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"4.9861\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"4.8941\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"5.0781\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"5.0781\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"4.9861\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"5.0781\" r=\"0.0285\"/></g><g><title>40%</title><circle cx=\"0.8785\" cy=\"6.6610\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"6.4770\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"6.5690\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"6.6610\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"6.4770\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"6.4770\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"6.5690\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"6.5690\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"6.4770\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"6.5690\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"6.4770\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"6.6610\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"6.6610\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"6.5690\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"6.6610\" r=\"0.0285\"/></g><g><title>35%</title><circle cx=\"0.8785\" cy=\"8.2438\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"8.0598\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"8.1518\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"8.2438\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"8.0598\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"8.0598\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"8.0598\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"8.1518\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"8.0598\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"8.2438\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"8.2438\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"8.1518\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"8.2438\" r=\"0.0285\"/></g><line x1=\"3.2711\" y1=\"9.0750\" x2=\"3.2711\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"4.3553\" y1=\"9.0750\" x2=\"4.3553\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"5.4395\" y1=\"9.0750\" x2=\"5.4395\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"6.5237\" y1=\"9.0750\" x2=\"6.5237\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"7.6079\" y1=\"9.0750\" x2=\"7.6079\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>1986</title><circle cx=\"3.1791\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"3.2711\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.2711\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"3.2711\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"3.4241\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.6691\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"3.7611\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.9141\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.9141\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.0061\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.1591\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"4.1591\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.2511\" cy=\"9.7285\" r=\"0.0285\"/></g><g><title>1990</title><circle cx=\"5.3475\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"5.4395\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"5.4395\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"5.4395\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"5.5925\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"5.8375\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"5.9295\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.0825\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"6.1745\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.3275\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"6.4195\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.4195\" cy=\"9.8205\" r=\"0.0285\"/></g><g><title>1994</title><circle cx=\"7.5159\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"7.6079\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"7.6079\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"7.6079\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"7.7609\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.0059\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"8.0979\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.2509\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"8.3429\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.4959\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.5879\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.5879\" cy=\"9.8205\" r=\"0.0285\"/></g><g><title>Year</title><circle cx=\"3.2711\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.4241\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.4241\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.5161\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.5161\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"3.5161\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.6691\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.7611\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"3.9141\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"4.0061\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.0061\" cy=\"10.2205\" r=\"0.0285\"/></g><polyline points=\"2.7290,5.7258 3.2711,5.4653 3.8132,5.3338 4.3553,5.4428 4.8974,5.2884 5.4395,8.4814 5.9816,8.5162 6.5237,8.9500 7.0658,8.7634 7.6079,8.5441 8.1500,8.8329\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0556\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><polyline points=\"2.7290,4.9308 3.2711,3.7923 3.8132,3.4892 4.3553,4.7911 4.8974,6.4704 5.4395,6.9701 5.9816,5.7674 6.5237,4.4898 7.0658,3.2329 7.6079,4.2372 8.1500,6.2801\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\" stroke-dasharray=\"0.300 0.150\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g><title>Germany</title><circle cx=\"8.4533\" cy=\"8.9249\" r=\"0.0285\"/><circle cx=\"8.6063\" cy=\"8.7409\" r=\"0.0285\"/><circle cx=\"8.6063\" cy=\"8.8329\" r=\"0.0285\"/><circle cx=\"8.6983\" cy=\"8.7409\" r=\"0.0285\"/><circle cx=\"8.6983\" cy=\"8.8329\" r=\"0.0285\"/><circle cx=\"8.8513\" cy=\"8.7409\" r=\"0.0285\"/><circle cx=\"8.8513\" cy=\"8.8329\" r=\"0.0285\"/><circle cx=\"8.9433\" cy=\"8.7409\" r=\"0.0285\"/><circle cx=\"8.9433\" cy=\"8.8329\" r=\"0.0285\"/><circle cx=\"8.9433\" cy=\"8.9249\" r=\"0.0285\"/><circle cx=\"9.1883\" cy=\"8.7409\" r=\"0.0285\"/><circle cx=\"9.1883\" cy=\"8.8329\" r=\"0.0285\"/><circle cx=\"9.1883\" cy=\"8.9249\" r=\"0.0285\"/><circle cx=\"9.3413\" cy=\"8.7409\" r=\"0.0285\"/><circle cx=\"9.3413\" cy=\"8.9249\" r=\"0.0285\"/><circle cx=\"9.4333\" cy=\"8.7409\" r=\"0.0285\"/></g><g><title>Japan</title><circle cx=\"8.4463\" cy=\"6.3721\" r=\"0.0285\"/><circle cx=\"8.5993\" cy=\"6.2801\" r=\"0.0285\"/><circle cx=\"8.6913\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"8.6913\" cy=\"6.2801\" r=\"0.0285\"/><circle cx=\"8.8443\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"9.0893\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"9.0893\" cy=\"6.2801\" r=\"0.0285\"/><circle cx=\"9.0893\" cy=\"6.3721\" r=\"0.0285\"/><circle cx=\"9.1813\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"9.3343\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"9.5793\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"9.5793\" cy=\"6.3721\" r=\"0.0285\"/><circle cx=\"9.6713\" cy=\"6.1881\" r=\"0.0285\"/><circle cx=\"9.6713\" cy=\"6.2801\" r=\"0.0285\"/></g></g></g></g><g transform=\"translate(0 22.60)\"><clipPath id=\"rings-ca96b995-2\"><path clip-rule=\"evenodd\" d=\"M0,0H11.5V11.0H0Z\"/></clipPath><rect width=\"11.5\" height=\"11.0\" fill=\"#f6f1e6\" stroke=\"#bbb\" stroke-width=\"0.02\"/><g filter=\"url(#raised-swell)\" fill=\"#5b5852\"><g clip-path=\"url(#rings-ca96b995-2)\"><g><title>Unemployment rate by country (part 2 of 2)</title><circle cx=\"0.9705\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.3805\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.3805\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.3805\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.5135\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.5135\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.5135\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.6055\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.3405\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.5855\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.7185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.7185\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.2085\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.2085\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.2085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.3005\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.3005\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.6985\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.7905\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.7905\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"9.7905\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"9.9435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"9.9435\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"10.2805\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"10.4335\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"10.5255\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"10.5255\" cy=\"0.6205\" r=\"0.0285\"/></g><g><title>Unemployment rate</title><circle cx=\"0.9705\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"1.4205\" r=\"0.0285\"/></g><line x1=\"2.3540\" y1=\"9.3424\" x2=\"2.3540\" y2=\"1.8205\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"2.3540\" y1=\"9.3250\" x2=\"8.1500\" y2=\"9.3250\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"2.1040\" y1=\"8.8836\" x2=\"2.6040\" y2=\"8.8836\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"7.2318\" x2=\"2.6040\" y2=\"7.2318\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"5.5799\" x2=\"2.6040\" y2=\"5.5799\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"3.9281\" x2=\"2.6040\" y2=\"3.9281\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"2.1040\" y1=\"2.2762\" x2=\"2.6040\" y2=\"2.2762\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>55%</title><circle cx=\"0.8785\" cy=\"2.3682\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"2.1842\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"2.2762\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"2.3682\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"2.1842\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"2.2762\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"2.1842\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"2.2762\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"2.1842\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"2.3682\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"2.3682\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"2.2762\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"2.3682\" r=\"0.0285\"/></g><g><title>50%</title><circle cx=\"0.8785\" cy=\"4.0201\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"3.8361\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"3.9281\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"4.0201\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.8361\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"3.9281\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"3.9281\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.8361\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.9281\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"3.8361\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"4.0201\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"4.0201\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.9281\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"4.0201\" r=\"0.0285\"/></g><g><title>45%</title><circle cx=\"0.8785\" cy=\"5.6719\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"5.4879\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"5.5799\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"5.6719\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"5.4879\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"5.4879\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"5.5799\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"5.4879\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"5.5799\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"5.4879\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"5.6719\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"5.6719\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"5.5799\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"5.6719\" r=\"0.0285\"/></g><g><title>40%</title><circle cx=\"0.8785\" cy=\"7.3238\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"7.1398\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"7.2318\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"7.3238\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"7.1398\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"7.1398\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"7.2318\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"7.2318\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"7.1398\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"7.2318\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"7.1398\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"7.3238\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"7.3238\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"7.2318\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"7.3238\" r=\"0.0285\"/></g><g><title>35%</title><circle cx=\"0.8785\" cy=\"8.9756\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"8.7916\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"8.8836\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"8.9756\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"8.7916\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"8.7916\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"8.7916\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"8.8836\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"8.7916\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"8.9756\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"8.9756\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"8.8836\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"8.9756\" r=\"0.0285\"/></g><line x1=\"3.2711\" y1=\"9.0750\" x2=\"3.2711\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"4.3553\" y1=\"9.0750\" x2=\"4.3553\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"5.4395\" y1=\"9.0750\" x2=\"5.4395\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"6.5237\" y1=\"9.0750\" x2=\"6.5237\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"7.6079\" y1=\"9.0750\" x2=\"7.6079\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>1986</title><circle cx=\"3.1791\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"3.2711\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.2711\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"3.2711\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"3.4241\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.6691\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"3.7611\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.9141\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.9141\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.0061\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.1591\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"4.1591\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.2511\" cy=\"9.7285\" r=\"0.0285\"/></g><g><title>1990</title><circle cx=\"5.3475\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"5.4395\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"5.4395\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"5.4395\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"5.5925\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"5.8375\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"5.9295\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.0825\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"6.1745\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.3275\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"6.4195\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.4195\" cy=\"9.8205\" r=\"0.0285\"/></g><g><title>1994</title><circle cx=\"7.5159\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"7.6079\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"7.6079\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"7.6079\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"7.7609\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.0059\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"8.0979\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.2509\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"8.3429\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.4959\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.5879\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.5879\" cy=\"9.8205\" r=\"0.0285\"/></g><g><title>Year</title><circle cx=\"3.2711\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.4241\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.4241\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.5161\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.5161\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"3.5161\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.6691\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.7611\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"3.9141\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"4.0061\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.0061\" cy=\"10.2205\" r=\"0.0285\"/></g><polyline points=\"2.7290,3.7777 3.2711,2.7748 3.8132,2.7167 4.3553,2.2192 4.8974,1.8205 5.4395,2.7698 5.9816,4.0744 6.5237,3.5544 7.0658,4.7361 7.6079,4.9193 8.1500,3.1890\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0556\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><polyline points=\"2.7290,6.1249 3.2711,6.1203 3.8132,4.5998 4.3553,4.6081 4.8974,6.5488 5.4395,7.0111 5.9816,8.0296 6.5237,8.8683 7.0658,8.4527 7.6079,8.9500 8.1500,7.7709\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\" stroke-dasharray=\"0.300 0.150\" stroke-linecap=\"butt\" stroke-linejoin=\"round\"/><g><title>Spain</title><circle cx=\"8.4533\" cy=\"3.2810\" r=\"0.0285\"/><circle cx=\"8.6063\" cy=\"3.1890\" r=\"0.0285\"/><circle cx=\"8.6063\" cy=\"3.2810\" r=\"0.0285\"/><circle cx=\"8.6983\" cy=\"3.0970\" r=\"0.0285\"/><circle cx=\"8.8513\" cy=\"3.0970\" r=\"0.0285\"/><circle cx=\"8.8513\" cy=\"3.1890\" r=\"0.0285\"/><circle cx=\"8.8513\" cy=\"3.2810\" r=\"0.0285\"/><circle cx=\"8.9433\" cy=\"3.0970\" r=\"0.0285\"/><circle cx=\"9.0963\" cy=\"3.0970\" r=\"0.0285\"/><circle cx=\"9.3413\" cy=\"3.2810\" r=\"0.0285\"/><circle cx=\"9.4333\" cy=\"3.1890\" r=\"0.0285\"/></g><g><title>Poland</title><circle cx=\"8.4463\" cy=\"7.8629\" r=\"0.0285\"/><circle cx=\"8.5993\" cy=\"7.6789\" r=\"0.0285\"/><circle cx=\"8.5993\" cy=\"7.7709\" r=\"0.0285\"/><circle cx=\"8.5993\" cy=\"7.8629\" r=\"0.0285\"/><circle cx=\"8.6913\" cy=\"7.6789\" r=\"0.0285\"/><circle cx=\"8.8443\" cy=\"7.6789\" r=\"0.0285\"/><circle cx=\"8.8443\" cy=\"7.8629\" r=\"0.0285\"/><circle cx=\"8.9363\" cy=\"7.7709\" r=\"0.0285\"/><circle cx=\"9.0893\" cy=\"7.6789\" r=\"0.0285\"/><circle cx=\"9.0893\" cy=\"7.7709\" r=\"0.0285\"/><circle cx=\"9.0893\" cy=\"7.8629\" r=\"0.0285\"/><circle cx=\"9.3343\" cy=\"7.6789\" r=\"0.0285\"/><circle cx=\"9.3343\" cy=\"7.7709\" r=\"0.0285\"/><circle cx=\"9.3343\" cy=\"7.8629\" r=\"0.0285\"/><circle cx=\"9.4263\" cy=\"7.6789\" r=\"0.0285\"/><circle cx=\"9.4263\" cy=\"7.8629\" r=\"0.0285\"/></g></g></g></g></svg>",
+    "key": [
+     "solid line (part 1): Germany",
+     "dashed line (part 1): Japan",
+     "solid line (part 2): Spain",
+     "dashed line (part 2): Poland"
+    ],
+    "pages": 3,
+    "pdf": "/samples/synthetic/f1-tactile.pdf",
+    "svg": "/samples/synthetic/f1-tactile.svg"
+   },
+   "brf": "/samples/synthetic/f1.brf",
+   "sound": {
+    "low_hz": 220,
+    "high_hz": 880,
+    "seconds_per_point": 0.25,
+    "pitch": "log",
+    "value_scale": "linear",
+    "series": {
+     "Germany": [
+      {
+       "x": 1985.0,
+       "value": 42.663486934124634,
+       "hz": 397.17
+      },
+      {
+       "x": 1986.0,
+       "value": 43.48632384193009,
+       "hz": 416.59
+      },
+      {
+       "x": 1987.0,
+       "value": 43.90188185140282,
+       "hz": 426.75
+      },
+      {
+       "x": 1988.0,
+       "value": 43.55730036660305,
+       "hz": 418.31
+      },
+      {
+       "x": 1989.0,
+       "value": 44.04515767774663,
+       "hz": 430.31
+      },
+      {
+       "x": 1990.0,
+       "value": 33.95889412439512,
+       "hz": 239.73
+      },
+      {
+       "x": 1991.0,
+       "value": 33.84877373107552,
+       "hz": 238.2
+      },
+      {
+       "x": 1992.0,
+       "value": 32.47849946901667,
+       "hz": 220.0
+      },
+      {
+       "x": 1993.0,
+       "value": 33.06808803258153,
+       "hz": 227.65
+      },
+      {
+       "x": 1994.0,
+       "value": 33.76065573841602,
+       "hz": 236.98
+      },
+      {
+       "x": 1995.0,
+       "value": 32.84843548360446,
+       "hz": 224.77
+      }
+     ],
+     "Japan": [
+      {
+       "x": 1985.0,
+       "value": 45.174873660103756,
+       "hz": 459.45
+      },
+      {
+       "x": 1986.0,
+       "value": 48.77136871063682,
+       "hz": 566.03
+      },
+      {
+       "x": 1987.0,
+       "value": 49.728746054547486,
+       "hz": 598.35
+      },
+      {
+       "x": 1988.0,
+       "value": 45.61613711410258,
+       "hz": 471.37
+      },
+      {
+       "x": 1989.0,
+       "value": 40.31137269695793,
+       "hz": 346.52
+      },
+      {
+       "x": 1990.0,
+       "value": 38.732809417005875,
+       "hz": 316.2
+      },
+      {
+       "x": 1991.0,
+       "value": 42.53210915047176,
+       "hz": 394.16
+      },
+      {
+       "x": 1992.0,
+       "value": 46.56791006609305,
+       "hz": 498.12
+      },
+      {
+       "x": 1993.0,
+       "value": 50.538370843744055,
+       "hz": 627.12
+      },
+      {
+       "x": 1994.0,
+       "value": 47.36583378247337,
+       "hz": 521.71
+      },
+      {
+       "x": 1995.0,
+       "value": 40.91248220274099,
+       "hz": 358.82
+      }
+     ],
+     "Spain": [
+      {
+       "x": 1985.0,
+       "value": 50.455204361359925,
+       "hz": 624.1
+      },
+      {
+       "x": 1986.0,
+       "value": 53.49081847596483,
+       "hz": 744.25
+      },
+      {
+       "x": 1987.0,
+       "value": 53.66671177984809,
+       "hz": 751.88
+      },
+      {
+       "x": 1988.0,
+       "value": 55.172546548556035,
+       "hz": 820.51
+      },
+      {
+       "x": 1989.0,
+       "value": 56.37938564142032,
+       "hz": 880.0
+      },
+      {
+       "x": 1990.0,
+       "value": 53.50600768254178,
+       "hz": 744.91
+      },
+      {
+       "x": 1991.0,
+       "value": 49.557100556014376,
+       "hz": 592.42
+      },
+      {
+       "x": 1992.0,
+       "value": 51.13109130962842,
+       "hz": 649.05
+      },
+      {
+       "x": 1993.0,
+       "value": 47.55407367557602,
+       "hz": 527.44
+      },
+      {
+       "x": 1994.0,
+       "value": 46.99958592971525,
+       "hz": 510.75
+      },
+      {
+       "x": 1995.0,
+       "value": 52.237065230439214,
+       "hz": 692.05
+      }
+     ],
+     "Poland": [
+      {
+       "x": 1985.0,
+       "value": 43.350283137023986,
+       "hz": 413.32
+      },
+      {
+       "x": 1986.0,
+       "value": 43.36435094415732,
+       "hz": 413.65
+      },
+      {
+       "x": 1987.0,
+       "value": 47.96662413411424,
+       "hz": 540.21
+      },
+      {
+       "x": 1988.0,
+       "value": 47.941760985462835,
+       "hz": 539.44
+      },
+      {
+       "x": 1989.0,
+       "value": 42.0674159217618,
+       "hz": 383.68
+      },
+      {
+       "x": 1990.0,
+       "value": 40.66806410063668,
+       "hz": 353.77
+      },
+      {
+       "x": 1991.0,
+       "value": 37.585069683328015,
+       "hz": 295.84
+      },
+      {
+       "x": 1992.0,
+       "value": 35.04643467398421,
+       "hz": 255.33
+      },
+      {
+       "x": 1993.0,
+       "value": 36.30456445951668,
+       "hz": 274.66
+      },
+      {
+       "x": 1994.0,
+       "value": 34.79916272994072,
+       "hz": 251.7
+      },
+      {
+       "x": 1995.0,
+       "value": 38.36814139120055,
+       "hz": 309.59
+      }
+     ]
+    }
+   },
+   "wav": "/samples/synthetic/f1.wav",
+   "truth": {
+    "x": [
+     1985.0,
+     1986.0,
+     1987.0,
+     1988.0,
+     1989.0,
+     1990.0,
+     1991.0,
+     1992.0,
+     1993.0,
+     1994.0,
+     1995.0
+    ],
+    "series": {
+     "Germany": [
+      42.63936523214558,
+      43.46470817728865,
+      43.88416757484623,
+      43.54017840884297,
+      44.049801722156985,
+      33.967287852252205,
+      33.84148023241065,
+      32.45860162811959,
+      33.04236058072641,
+      33.74298301091846,
+      32.83209933411155
+     ],
+     "Japan": [
+      45.11959627614803,
+      48.73284626861891,
+      49.73041193071598,
+      45.62867561415674,
+      40.31707768181004,
+      38.703240400984896,
+      42.496999757611825,
+      46.52688592372665,
+      50.51922672926792,
+      47.38689337802434,
+      40.86578041628965
+     ],
+     "Spain": [
+      50.433824538559996,
+      53.46731121023881,
+      53.620873587110765,
+      55.163289103372605,
+      56.37114772387261,
+      53.48802644880962,
+      49.571698334937224,
+      51.112271729001876,
+      47.55773902313825,
+      46.96010698192192,
+      52.24480598907382
+     ],
+     "Poland": [
+      43.316025183715865,
+      43.33281510943024,
+      47.922079613665915,
+      47.949822773331384,
+      42.07316979799271,
+      40.66470254611458,
+      37.57752291766068,
+      35.030067730327,
+      36.28675897847548,
+      34.775793645496144,
+      38.34330088375828
+     ]
+    }
+   }
+  },
+  {
+   "id": "f2",
+   "page": null,
+   "figure_number": "",
+   "caption": "GDP per capita by country",
+   "chart_type": "grouped_bar",
+   "title": "GDP per capita by country",
+   "semantics": {
+    "chart_type": "grouped_bar",
+    "title": "GDP per capita by country",
+    "x_title": "",
+    "y_title": "GDP per capita",
+    "x_scale": "category",
+    "y_scale": "linear",
+    "x_ticks": [
+     "Canada",
+     "Germany",
+     "India",
+     "Japan"
+    ],
+    "y_ticks": [
+     "$0",
+     "$2,500",
+     "$5,000",
+     "$7,500",
+     "$10,000",
+     "$12,500",
+     "$15,000",
+     "$17,500",
+     "$20,000"
+    ],
+    "categories": [
+     "Canada",
+     "Germany",
+     "India",
+     "Japan"
+    ],
+    "series": [
+     {
+      "name": "Chile",
+      "color": "green",
+      "style": "solid",
+      "marker": ""
+     },
+     {
+      "name": "UK",
+      "color": "orange",
+      "style": "solid",
+      "marker": ""
+     }
+    ],
+    "legend": [
+     "Chile",
+     "UK"
+    ],
+    "source": "Source: World Bank (synthetic)",
+    "caption": "GDP per capita by country"
+   },
+   "image": "/samples/synthetic/f2-chart.png",
+   "agreement": {},
+   "status": "verified",
+   "reason": "Both readings agree and the redraw matches the original.",
+   "iou": 0.9801114950904037,
+   "issues": [],
+   "rerender": "/samples/synthetic/f2-redraw.png",
+   "points": [
+    {
+     "series": "Chile",
+     "x": "Canada",
+     "value": 17373.967826161497,
+     "reading_a": null,
+     "reading_b": 17373.967826161497,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Chile",
+     "x": "Germany",
+     "value": 19967.54536400954,
+     "reading_a": null,
+     "reading_b": 19967.54536400954,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Chile",
+     "x": "India",
+     "value": 19538.460135954883,
+     "reading_a": null,
+     "reading_b": 19538.460135954883,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Chile",
+     "x": "Japan",
+     "value": 17498.078208738945,
+     "reading_a": null,
+     "reading_b": 17498.078208738945,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "UK",
+     "x": "Canada",
+     "value": 16940.071150644817,
+     "reading_a": null,
+     "reading_b": 16940.071150644817,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "UK",
+     "x": "Germany",
+     "value": 19751.677719878924,
+     "reading_a": null,
+     "reading_b": 19751.677719878924,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "UK",
+     "x": "India",
+     "value": 18760.21742395282,
+     "reading_a": null,
+     "reading_b": 18760.21742395282,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "UK",
+     "x": "Japan",
+     "value": 15597.065146814904,
+     "reading_a": null,
+     "reading_b": 15597.065146814904,
+     "status": "pixel",
+     "note": ""
+    }
+   ],
+   "reading_b": {
+    "x": [
+     "Canada",
+     "Germany",
+     "India",
+     "Japan"
+    ],
+    "series": {
+     "Chile": [
+      17373.967826161497,
+      19967.54536400954,
+      19538.460135954883,
+      17498.078208738945
+     ],
+     "UK": [
+      16940.071150644817,
+      19751.677719878924,
+      18760.21742395282,
+      15597.065146814904
+     ]
+    }
+   },
+   "reading_a": null,
+   "table": {
+    "x": [
+     "Canada",
+     "Germany",
+     "India",
+     "Japan"
+    ],
+    "series": {
+     "Chile": [
+      17373.967826161497,
+      19967.54536400954,
+      19538.460135954883,
+      17498.078208738945
+     ],
+     "UK": [
+      16940.071150644817,
+      19751.677719878924,
+      18760.21742395282,
+      15597.065146814904
+     ]
+    }
+   },
+   "facts": [
+    {
+     "id": "S1.max",
+     "kind": "max",
+     "text": "Chile peaks at $19,968 for Germany.",
+     "values": {
+      "series": "Chile",
+      "x": "Germany",
+      "value": 19967.54536400954
+     }
+    },
+    {
+     "id": "S1.min",
+     "kind": "min",
+     "text": "Chile is lowest at $17,374 for Canada.",
+     "values": {
+      "series": "Chile",
+      "x": "Canada",
+      "value": 17373.967826161497
+     }
+    },
+    {
+     "id": "S1.rank",
+     "kind": "rank",
+     "text": "For Chile, the highest is Germany ($19,968), then India ($19,538), then Japan ($17,498), and the lowest is Canada ($17,374).",
+     "values": {
+      "series": "Chile",
+      "order": [
+       {
+        "x": "Germany",
+        "value": 19967.54536400954
+       },
+       {
+        "x": "India",
+        "value": 19538.460135954883
+       },
+       {
+        "x": "Japan",
+        "value": 17498.078208738945
+       },
+       {
+        "x": "Canada",
+        "value": 17373.967826161497
+       }
+      ]
+     }
+    },
+    {
+     "id": "S2.max",
+     "kind": "max",
+     "text": "UK peaks at $19,752 for Germany.",
+     "values": {
+      "series": "UK",
+      "x": "Germany",
+      "value": 19751.677719878924
+     }
+    },
+    {
+     "id": "S2.min",
+     "kind": "min",
+     "text": "UK is lowest at $15,597 for Japan.",
+     "values": {
+      "series": "UK",
+      "x": "Japan",
+      "value": 15597.065146814904
+     }
+    },
+    {
+     "id": "S2.rank",
+     "kind": "rank",
+     "text": "For UK, the highest is Germany ($19,752), then India ($18,760), then Canada ($16,940), and the lowest is Japan ($15,597).",
+     "values": {
+      "series": "UK",
+      "order": [
+       {
+        "x": "Germany",
+        "value": 19751.677719878924
+       },
+       {
+        "x": "India",
+        "value": 18760.21742395282
+       },
+       {
+        "x": "Canada",
+        "value": 16940.071150644817
+       },
+       {
+        "x": "Japan",
+        "value": 15597.065146814904
+       }
+      ]
+     }
+    },
+    {
+     "id": "G.leaders",
+     "kind": "leaders",
+     "text": "Across 4 categories, the highest series is Chile in 4.",
+     "values": {
+      "total": 4,
+      "counts": {
+       "Chile": 4
+      }
+     }
+    }
+   ],
+   "description": {
+    "long_description": "This is a grouped bar chart titled \"GDP per capita by country\". The categories, from left to right, are Canada, Germany, India and Japan. The vertical axis shows GDP per capita, from $0 to $20,000. There are two series: Chile and UK.\n\nFor Chile, the highest is Germany ($19,968), then India ($19,538), then Japan ($17,498), and the lowest is Canada ($17,374).\n\nFor UK, the highest is Germany ($19,752), then India ($18,760), then Canada ($16,940), and the lowest is Japan ($15,597).\n\nAcross 4 categories, the highest series is Chile in 4.",
+    "exploration_guide": [
+     "Press Home to hear the first point, then the Right Arrow key to move along one point at a time.",
+     "Press End to jump to the last point.",
+     "Listen for the highest value. Chile peaks at $19,968 for Germany.",
+     "Press S to switch between the two series, and Space to play the whole series as a tone that rises and falls with the value."
+    ],
+    "audit": [],
+    "alt_text": "Grouped bar chart of GDP per capita by country: Chile peaks at $19,968 for Germany."
+   },
+   "csv": "/samples/synthetic/f2.csv",
+   "tactile": {
+    "preview_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 11.5 22.30\" role=\"img\" aria-label=\"GDP per capita by country, tactile graphic preview, 2 pages\"><defs><filter id=\"raised-swell\" filterUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"11.5\" height=\"11.0\" color-interpolation-filters=\"sRGB\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"0.012\" result=\"h\"/><feDiffuseLighting in=\"h\" surfaceScale=\"3\" diffuseConstant=\"1.25\" lighting-color=\"#fff\" result=\"lit\"><feDistantLight azimuth=\"225\" elevation=\"50\"/></feDiffuseLighting><feFlood flood-color=\"#f6f1e6\" result=\"paper\"/><feComposite in=\"SourceGraphic\" in2=\"paper\" operator=\"over\" result=\"printed\"/><feBlend in=\"lit\" in2=\"printed\" mode=\"multiply\"/></filter></defs><g transform=\"translate(0 0.00)\"><clipPath id=\"rings-8b49975b-0\"><path clip-rule=\"evenodd\" d=\"M0,0H11.5V11.0H0Z\"/></clipPath><rect width=\"11.5\" height=\"11.0\" fill=\"#f6f1e6\" stroke=\"#bbb\" stroke-width=\"0.02\"/><g filter=\"url(#raised-swell)\" fill=\"#5b5852\"><g clip-path=\"url(#rings-8b49975b-0)\"><g><title>GDP per capita by country</title><circle cx=\"2.9305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.1355\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.6255\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.0235\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.0235\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.5855\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.3205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.7125\" r=\"0.0285\"/></g><g><title>Key:</title><circle cx=\"2.4405\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.1555\" cy=\"1.4205\" r=\"0.0285\"/></g><g><title>plain bar, outline only: Chile</title><circle cx=\"2.1955\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.2205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.3125\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"2.1285\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"2.2205\" r=\"0.0285\"/></g><rect x=\"0.8500\" y=\"2.1000\" width=\"1.0000\" height=\"0.5000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><g><title>diagonal lines: UK</title><circle cx=\"2.1955\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"2.9285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"3.1125\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"2.9285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"3.1125\" r=\"0.0285\"/></g><rect x=\"0.8500\" y=\"2.9000\" width=\"1.0000\" height=\"0.5000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><path d=\"M0.8500,3.0768L1.0268,2.9000M0.8500,3.2536L1.2036,2.9000M0.8803,3.4000L1.3803,2.9000M1.0571,3.4000L1.5571,2.9000M1.2339,3.4000L1.7339,2.9000M1.4107,3.4000L1.8500,2.9607M1.5874,3.4000L1.8500,3.1374M1.7642,3.4000L1.8500,3.3142\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>cn: Canada</title><circle cx=\"1.7055\" cy=\"3.9125\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.9125\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.8205\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"3.8205\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"3.9125\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"3.9125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"3.8205\" r=\"0.0285\"/></g><g><title>cn: Canada</title><circle cx=\"0.8785\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"0.9705\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.9125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"3.7285\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"3.8205\" r=\"0.0285\"/></g></g></g></g><g transform=\"translate(0 11.30)\"><clipPath id=\"rings-eee4a8ee-1\"><path clip-rule=\"evenodd\" d=\"M0,0H11.5V11.0H0Z\"/></clipPath><rect width=\"11.5\" height=\"11.0\" fill=\"#f6f1e6\" stroke=\"#bbb\" stroke-width=\"0.02\"/><g filter=\"url(#raised-swell)\" fill=\"#5b5852\"><g clip-path=\"url(#rings-eee4a8ee-1)\"><g><title>GDP per capita by country</title><circle cx=\"2.9305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.1355\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.6255\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.0235\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.0235\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0955\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.5855\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.8305\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.9835\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.0755\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.2285\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.3205\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.4735\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"8.5655\" cy=\"0.7125\" r=\"0.0285\"/></g><g><title>GDP per capita</title><circle cx=\"0.9705\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.0835\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.3285\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.5735\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"3.6655\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"3.8185\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"3.9105\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"1.5125\" r=\"0.0285\"/><circle cx=\"4.1555\" cy=\"1.3285\" r=\"0.0285\"/><circle cx=\"4.1555\" cy=\"1.4205\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"1.3285\" r=\"0.0285\"/></g><rect x=\"3.7715\" y=\"2.8584\" width=\"0.8051\" height=\"6.8666\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><rect x=\"4.5766\" y=\"3.0299\" width=\"0.8051\" height=\"6.6951\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><path d=\"M4.5766,3.2066L4.7534,3.0299M4.5766,3.3834L4.9302,3.0299M4.5766,3.5602L5.1070,3.0299M4.5766,3.7370L5.2837,3.0299M4.5766,3.9137L5.3818,3.1086M4.5766,4.0905L5.3818,3.2854M4.5766,4.2673L5.3818,3.4622M4.5766,4.4441L5.3818,3.6389M4.5766,4.6209L5.3818,3.8157M4.5766,4.7976L5.3818,3.9925M4.5766,4.9744L5.3818,4.1693M4.5766,5.1512L5.3818,4.3461M4.5766,5.3280L5.3818,4.5228M4.5766,5.5047L5.3818,4.6996M4.5766,5.6815L5.3818,4.8764M4.5766,5.8583L5.3818,5.0532M4.5766,6.0351L5.3818,5.2299M4.5766,6.2118L5.3818,5.4067M4.5766,6.3886L5.3818,5.5835M4.5766,6.5654L5.3818,5.7603M4.5766,6.7422L5.3818,5.9370M4.5766,6.9189L5.3818,6.1138M4.5766,7.0957L5.3818,6.2906M4.5766,7.2725L5.3818,6.4674M4.5766,7.4493L5.3818,6.6442M4.5766,7.6261L5.3818,6.8209M4.5766,7.8028L5.3818,6.9977M4.5766,7.9796L5.3818,7.1745M4.5766,8.1564L5.3818,7.3513M4.5766,8.3332L5.3818,7.5280M4.5766,8.5099L5.3818,7.7048M4.5766,8.6867L5.3818,7.8816M4.5766,8.8635L5.3818,8.0584M4.5766,9.0403L5.3818,8.2351M4.5766,9.2170L5.3818,8.4119M4.5766,9.3938L5.3818,8.5887M4.5766,9.5706L5.3818,8.7655M4.5990,9.7250L5.3818,8.9422M4.7758,9.7250L5.3818,9.1190M4.9526,9.7250L5.3818,9.2958M5.1293,9.7250L5.3818,9.4726M5.3061,9.7250L5.3818,9.6494\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><rect x=\"5.5067\" y=\"1.8333\" width=\"0.8051\" height=\"7.8917\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><rect x=\"6.3119\" y=\"1.9186\" width=\"0.8051\" height=\"7.8064\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><path d=\"M6.3119,2.0954L6.4887,1.9186M6.3119,2.2722L6.6654,1.9186M6.3119,2.4490L6.8422,1.9186M6.3119,2.6257L7.0190,1.9186M6.3119,2.8025L7.1170,1.9974M6.3119,2.9793L7.1170,2.1742M6.3119,3.1561L7.1170,2.3510M6.3119,3.3329L7.1170,2.5277M6.3119,3.5096L7.1170,2.7045M6.3119,3.6864L7.1170,2.8813M6.3119,3.8632L7.1170,3.0581M6.3119,4.0400L7.1170,3.2348M6.3119,4.2167L7.1170,3.4116M6.3119,4.3935L7.1170,3.5884M6.3119,4.5703L7.1170,3.7652M6.3119,4.7471L7.1170,3.9419M6.3119,4.9238L7.1170,4.1187M6.3119,5.1006L7.1170,4.2955M6.3119,5.2774L7.1170,4.4723M6.3119,5.4542L7.1170,4.6491M6.3119,5.6310L7.1170,4.8258M6.3119,5.8077L7.1170,5.0026M6.3119,5.9845L7.1170,5.1794M6.3119,6.1613L7.1170,5.3562M6.3119,6.3381L7.1170,5.5329M6.3119,6.5148L7.1170,5.7097M6.3119,6.6916L7.1170,5.8865M6.3119,6.8684L7.1170,6.0633M6.3119,7.0452L7.1170,6.2400M6.3119,7.2219L7.1170,6.4168M6.3119,7.3987L7.1170,6.5936M6.3119,7.5755L7.1170,6.7704M6.3119,7.7523L7.1170,6.9471M6.3119,7.9291L7.1170,7.1239M6.3119,8.1058L7.1170,7.3007M6.3119,8.2826L7.1170,7.4775M6.3119,8.4594L7.1170,7.6543M6.3119,8.6362L7.1170,7.8310M6.3119,8.8129L7.1170,8.0078M6.3119,8.9897L7.1170,8.1846M6.3119,9.1665L7.1170,8.3614M6.3119,9.3433L7.1170,8.5381M6.3119,9.5200L7.1170,8.7149M6.3119,9.6968L7.1170,8.8917M6.4605,9.7250L7.1170,9.0685M6.6372,9.7250L7.1170,9.2452M6.8140,9.7250L7.1170,9.4220M6.9908,9.7250L7.1170,9.5988\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><rect x=\"7.2420\" y=\"2.0029\" width=\"0.8051\" height=\"7.7221\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><rect x=\"8.0471\" y=\"2.3105\" width=\"0.8051\" height=\"7.4145\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><path d=\"M8.0471,2.4873L8.2239,2.3105M8.0471,2.6640L8.4007,2.3105M8.0471,2.8408L8.5775,2.3105M8.0471,3.0176L8.7542,2.3105M8.0471,3.1944L8.8523,2.3893M8.0471,3.3712L8.8523,2.5660M8.0471,3.5479L8.8523,2.7428M8.0471,3.7247L8.8523,2.9196M8.0471,3.9015L8.8523,3.0964M8.0471,4.0783L8.8523,3.2731M8.0471,4.2550L8.8523,3.4499M8.0471,4.4318L8.8523,3.6267M8.0471,4.6086L8.8523,3.8035M8.0471,4.7854L8.8523,3.9802M8.0471,4.9621L8.8523,4.1570M8.0471,5.1389L8.8523,4.3338M8.0471,5.3157L8.8523,4.5106M8.0471,5.4925L8.8523,4.6873M8.0471,5.6693L8.8523,4.8641M8.0471,5.8460L8.8523,5.0409M8.0471,6.0228L8.8523,5.2177M8.0471,6.1996L8.8523,5.3945M8.0471,6.3764L8.8523,5.5712M8.0471,6.5531L8.8523,5.7480M8.0471,6.7299L8.8523,5.9248M8.0471,6.9067L8.8523,6.1016M8.0471,7.0835L8.8523,6.2783M8.0471,7.2602L8.8523,6.4551M8.0471,7.4370L8.8523,6.6319M8.0471,7.6138L8.8523,6.8087M8.0471,7.7906L8.8523,6.9854M8.0471,7.9673L8.8523,7.1622M8.0471,8.1441L8.8523,7.3390M8.0471,8.3209L8.8523,7.5158M8.0471,8.4977L8.8523,7.6926M8.0471,8.6745L8.8523,7.8693M8.0471,8.8512L8.8523,8.0461M8.0471,9.0280L8.8523,8.2229M8.0471,9.2048L8.8523,8.3997M8.0471,9.3816L8.8523,8.5764M8.0471,9.5583L8.8523,8.7532M8.0572,9.7250L8.8523,8.9300M8.2340,9.7250L8.8523,9.1068M8.4108,9.7250L8.8523,9.2835M8.5876,9.7250L8.8523,9.4603M8.7643,9.7250L8.8523,9.6371\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><rect x=\"8.9772\" y=\"2.8093\" width=\"0.8051\" height=\"6.9157\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><rect x=\"9.7824\" y=\"3.5606\" width=\"0.8051\" height=\"6.1644\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><path d=\"M9.7824,3.7374L9.9592,3.5606M9.7824,3.9142L10.1359,3.5606M9.7824,4.0910L10.3127,3.5606M9.7824,4.2678L10.4895,3.5606M9.7824,4.4445L10.5875,3.6394M9.7824,4.6213L10.5875,3.8162M9.7824,4.7981L10.5875,3.9930M9.7824,4.9749L10.5875,4.1697M9.7824,5.1516L10.5875,4.3465M9.7824,5.3284L10.5875,4.5233M9.7824,5.5052L10.5875,4.7001M9.7824,5.6820L10.5875,4.8768M9.7824,5.8587L10.5875,5.0536M9.7824,6.0355L10.5875,5.2304M9.7824,6.2123L10.5875,5.4072M9.7824,6.3891L10.5875,5.5840M9.7824,6.5659L10.5875,5.7607M9.7824,6.7426L10.5875,5.9375M9.7824,6.9194L10.5875,6.1143M9.7824,7.0962L10.5875,6.2911M9.7824,7.2730L10.5875,6.4678M9.7824,7.4497L10.5875,6.6446M9.7824,7.6265L10.5875,6.8214M9.7824,7.8033L10.5875,6.9982M9.7824,7.9801L10.5875,7.1749M9.7824,8.1568L10.5875,7.3517M9.7824,8.3336L10.5875,7.5285M9.7824,8.5104L10.5875,7.7053M9.7824,8.6872L10.5875,7.8820M9.7824,8.8640L10.5875,8.0588M9.7824,9.0407L10.5875,8.2356M9.7824,9.2175L10.5875,8.4124M9.7824,9.3943L10.5875,8.5892M9.7824,9.5711L10.5875,8.7659M9.8052,9.7250L10.5875,8.9427M9.9820,9.7250L10.5875,9.1195M10.1588,9.7250L10.5875,9.2963M10.3355,9.7250L10.5875,9.4730M10.5123,9.7250L10.5875,9.6498\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.3340\" y1=\"9.7424\" x2=\"3.3340\" y2=\"1.8205\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"3.3340\" y1=\"9.7250\" x2=\"10.6500\" y2=\"9.7250\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"3.0840\" y1=\"9.7250\" x2=\"3.5840\" y2=\"9.7250\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"8.7369\" x2=\"3.5840\" y2=\"8.7369\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"7.7489\" x2=\"3.5840\" y2=\"7.7489\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"6.7608\" x2=\"3.5840\" y2=\"6.7608\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"5.7728\" x2=\"3.5840\" y2=\"5.7728\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"4.7847\" x2=\"3.5840\" y2=\"4.7847\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"3.7966\" x2=\"3.5840\" y2=\"3.7966\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"2.8086\" x2=\"3.5840\" y2=\"2.8086\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"3.0840\" y1=\"1.8205\" x2=\"3.5840\" y2=\"1.8205\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>$20,000</title><circle cx=\"0.9705\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.9125\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"1.8205\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.7285\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.8205\" r=\"0.0285\"/></g><g><title>$15,000</title><circle cx=\"0.9705\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.8886\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"3.8886\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.8886\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"3.7966\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"3.7046\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"3.7966\" r=\"0.0285\"/></g><g><title>$10,000</title><circle cx=\"0.9705\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"5.8648\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"5.8648\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"5.8648\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"5.7728\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"5.6808\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"5.7728\" r=\"0.0285\"/></g><g><title>$5,000</title><circle cx=\"1.2155\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"7.8409\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"7.8409\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"7.8409\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"7.7489\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"7.6569\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"7.7489\" r=\"0.0285\"/></g><g><title>$0</title><circle cx=\"2.1955\" cy=\"9.6330\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"9.7250\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"9.8170\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"9.6330\" r=\"0.0285\"/><circle cx=\"2.5935\" cy=\"9.8170\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"9.6330\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"9.7250\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"9.8170\" r=\"0.0285\"/><circle cx=\"2.8385\" cy=\"9.7250\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"9.6330\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"9.7250\" r=\"0.0285\"/></g><g><title>Canada</title><circle cx=\"4.4081\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.5001\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.6531\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.6531\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"4.7451\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.7451\" cy=\"10.2205\" r=\"0.0285\"/></g><g><title>Germany</title><circle cx=\"5.8679\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"6.0209\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.0209\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.1129\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.1129\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.2659\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.2659\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.3579\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.3579\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.3579\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"6.6029\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.6029\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.6029\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"6.7559\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.7559\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"6.8479\" cy=\"10.1285\" r=\"0.0285\"/></g><g><title>India</title><circle cx=\"7.6031\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"7.7561\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"7.8481\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"8.0011\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"8.0931\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"8.0931\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"8.2461\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"8.3381\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"8.4911\" cy=\"10.1285\" r=\"0.0285\"/></g><g><title>Japan</title><circle cx=\"9.2159\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"9.3689\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"9.4609\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"9.4609\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"9.6139\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"9.8589\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"9.8589\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"9.8589\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"9.9509\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"10.1039\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"10.3489\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"10.3489\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"10.4409\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"10.4409\" cy=\"10.2205\" r=\"0.0285\"/></g></g></g></g></svg>",
+    "key": [
+     "plain bar, outline only: Chile",
+     "diagonal lines: UK",
+     "cn: Canada"
+    ],
+    "pages": 2,
+    "pdf": "/samples/synthetic/f2-tactile.pdf",
+    "svg": "/samples/synthetic/f2-tactile.svg"
+   },
+   "brf": "/samples/synthetic/f2.brf",
+   "sound": {
+    "low_hz": 220,
+    "high_hz": 880,
+    "seconds_per_point": 0.25,
+    "pitch": "log",
+    "value_scale": "linear",
+    "series": {
+     "Chile": [
+      {
+       "x": "Canada",
+       "value": 17373.967826161497,
+       "hz": 386.55
+      },
+      {
+       "x": "Germany",
+       "value": 19967.54536400954,
+       "hz": 880.0
+      },
+      {
+       "x": "India",
+       "value": 19538.460135954883,
+       "hz": 768.02
+      },
+      {
+       "x": "Japan",
+       "value": 17498.078208738945,
+       "hz": 402.07
+      }
+     ],
+     "UK": [
+      {
+       "x": "Canada",
+       "value": 16940.071150644817,
+       "hz": 336.84
+      },
+      {
+       "x": "Germany",
+       "value": 19751.677719878924,
+       "hz": 821.76
+      },
+      {
+       "x": "India",
+       "value": 18760.21742395282,
+       "hz": 600.02
+      },
+      {
+       "x": "Japan",
+       "value": 15597.065146814904,
+       "hz": 220.0
+      }
+     ]
+    }
+   },
+   "wav": "/samples/synthetic/f2.wav",
+   "truth": {
+    "x": [
+     "Canada",
+     "Germany",
+     "India",
+     "Japan"
+    ],
+    "series": {
+     "Chile": [
+      17362.620217227173,
+      19930.263950753713,
+      19499.2660994629,
+      17498.000057926285
+     ],
+     "UK": [
+      16897.878203324224,
+      19736.63236889112,
+      18735.29466702674,
+      15555.607013395736
+     ]
+    }
+   }
+  },
+  {
+   "id": "f3",
+   "page": null,
+   "figure_number": "",
+   "caption": "Unemployment rate",
+   "chart_type": "hbar",
+   "title": "Unemployment rate",
+   "semantics": {
+    "chart_type": "hbar",
+    "title": "Unemployment rate",
+    "x_title": "Unemployment rate",
+    "y_title": "",
+    "x_scale": "category",
+    "y_scale": "linear",
+    "x_ticks": [
+     "0%",
+     "1%",
+     "2%",
+     "3%",
+     "4%",
+     "5%",
+     "6%"
+    ],
+    "y_ticks": [
+     "Italy",
+     "Canada",
+     "Japan",
+     "Chile",
+     "Poland",
+     "Germany"
+    ],
+    "categories": [
+     "Germany",
+     "Poland",
+     "Chile",
+     "Japan",
+     "Canada",
+     "Italy"
+    ],
+    "series": [
+     {
+      "name": "Unemployment rate",
+      "color": "blue",
+      "style": "solid",
+      "marker": ""
+     }
+    ],
+    "legend": [],
+    "source": "Source: World Bank (synthetic)",
+    "caption": "Unemployment rate"
+   },
+   "image": "/samples/synthetic/f3-chart.png",
+   "agreement": {},
+   "status": "verified",
+   "reason": "Both readings agree and the redraw matches the original.",
+   "iou": 0.9457054234095681,
+   "issues": [],
+   "rerender": "/samples/synthetic/f3-redraw.png",
+   "points": [
+    {
+     "series": "Unemployment rate",
+     "x": "Germany",
+     "value": 4.589145064668388,
+     "reading_a": null,
+     "reading_b": 4.589145064668388,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Unemployment rate",
+     "x": "Poland",
+     "value": 5.100938293975855,
+     "reading_a": null,
+     "reading_b": 5.100938293975855,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Unemployment rate",
+     "x": "Chile",
+     "value": 4.57864177974021,
+     "reading_a": null,
+     "reading_b": 4.57864177974021,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Unemployment rate",
+     "x": "Japan",
+     "value": 3.7082638128607437,
+     "reading_a": null,
+     "reading_b": 3.7082638128607437,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Unemployment rate",
+     "x": "Canada",
+     "value": 4.252462482139316,
+     "reading_a": null,
+     "reading_b": 4.252462482139316,
+     "status": "pixel",
+     "note": ""
+    },
+    {
+     "series": "Unemployment rate",
+     "x": "Italy",
+     "value": 5.1337976697830925,
+     "reading_a": null,
+     "reading_b": 5.1337976697830925,
+     "status": "pixel",
+     "note": ""
+    }
+   ],
+   "reading_b": {
+    "x": [
+     "Germany",
+     "Poland",
+     "Chile",
+     "Japan",
+     "Canada",
+     "Italy"
+    ],
+    "series": {
+     "Unemployment rate": [
+      4.589145064668388,
+      5.100938293975855,
+      4.57864177974021,
+      3.7082638128607437,
+      4.252462482139316,
+      5.1337976697830925
+     ]
+    }
+   },
+   "reading_a": null,
+   "table": {
+    "x": [
+     "Germany",
+     "Poland",
+     "Chile",
+     "Japan",
+     "Canada",
+     "Italy"
+    ],
+    "series": {
+     "Unemployment rate": [
+      4.589145064668388,
+      5.100938293975855,
+      4.57864177974021,
+      3.7082638128607437,
+      4.252462482139316,
+      5.1337976697830925
+     ]
+    }
+   },
+   "facts": [
+    {
+     "id": "S1.max",
+     "kind": "max",
+     "text": "Unemployment rate peaks at 5.13% for Italy.",
+     "values": {
+      "series": "Unemployment rate",
+      "x": "Italy",
+      "value": 5.1337976697830925
+     }
+    },
+    {
+     "id": "S1.min",
+     "kind": "min",
+     "text": "Unemployment rate is lowest at 3.71% for Japan.",
+     "values": {
+      "series": "Unemployment rate",
+      "x": "Japan",
+      "value": 3.7082638128607437
+     }
+    },
+    {
+     "id": "S1.rank",
+     "kind": "rank",
+     "text": "For Unemployment rate, the highest is Italy (5.13%), then Poland (5.1%), then Germany (4.59%), and the lowest is Japan (3.71%).",
+     "values": {
+      "series": "Unemployment rate",
+      "order": [
+       {
+        "x": "Italy",
+        "value": 5.1337976697830925
+       },
+       {
+        "x": "Poland",
+        "value": 5.100938293975855
+       },
+       {
+        "x": "Germany",
+        "value": 4.589145064668388
+       },
+       {
+        "x": "Chile",
+        "value": 4.57864177974021
+       },
+       {
+        "x": "Canada",
+        "value": 4.252462482139316
+       },
+       {
+        "x": "Japan",
+        "value": 3.7082638128607437
+       }
+      ]
+     }
+    }
+   ],
+   "description": {
+    "long_description": "This is a horizontal bar chart titled \"Unemployment rate\". The bars, from top to bottom, are Germany, Poland, Chile, Japan, Canada and Italy. The horizontal axis shows Unemployment rate, from 0% to 6%.\n\nFor Unemployment rate, the highest is Italy (5.13%), then Poland (5.1%), then Germany (4.59%), and the lowest is Japan (3.71%).",
+    "exploration_guide": [
+     "Press Home to hear the first point, then the Right Arrow key to move along one point at a time.",
+     "Press End to jump to the last point.",
+     "Listen for the highest value. Unemployment rate peaks at 5.13% for Italy.",
+     "Press Space to play the whole series as a tone that rises and falls with the value."
+    ],
+    "audit": [],
+    "alt_text": "Horizontal bar chart of Unemployment rate: Unemployment rate peaks at 5.13% for Italy."
+   },
+   "csv": "/samples/synthetic/f3.csv",
+   "tactile": {
+    "preview_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" viewBox=\"0 0 11.5 11.00\" role=\"img\" aria-label=\"Unemployment rate, tactile graphic preview, 1 page\"><defs><filter id=\"raised-swell\" filterUnits=\"userSpaceOnUse\" x=\"0\" y=\"0\" width=\"11.5\" height=\"11.0\" color-interpolation-filters=\"sRGB\"><feGaussianBlur in=\"SourceAlpha\" stdDeviation=\"0.012\" result=\"h\"/><feDiffuseLighting in=\"h\" surfaceScale=\"3\" diffuseConstant=\"1.25\" lighting-color=\"#fff\" result=\"lit\"><feDistantLight azimuth=\"225\" elevation=\"50\"/></feDiffuseLighting><feFlood flood-color=\"#f6f1e6\" result=\"paper\"/><feComposite in=\"SourceGraphic\" in2=\"paper\" operator=\"over\" result=\"printed\"/><feBlend in=\"lit\" in2=\"printed\" mode=\"multiply\"/></filter></defs><g transform=\"translate(0 0.00)\"><clipPath id=\"rings-e45f4f07-0\"><path clip-rule=\"evenodd\" d=\"M0,0H11.5V11.0H0Z\"/></clipPath><rect width=\"11.5\" height=\"11.0\" fill=\"#f6f1e6\" stroke=\"#bbb\" stroke-width=\"0.02\"/><g filter=\"url(#raised-swell)\" fill=\"#5b5852\"><g clip-path=\"url(#rings-e45f4f07-0)\"><g><title>Unemployment rate</title><circle cx=\"3.9105\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.0635\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.1555\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.3085\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.4005\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.5535\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.6455\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"4.7985\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"4.7985\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"4.8905\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.0435\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.1355\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.2885\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.5335\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.6255\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.7785\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"5.8705\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.1155\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.2685\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.3605\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"6.7585\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"6.8505\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.0035\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.2485\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.2485\" cy=\"0.7125\" r=\"0.0285\"/><circle cx=\"7.3405\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.3405\" cy=\"0.6205\" r=\"0.0285\"/><circle cx=\"7.4935\" cy=\"0.5285\" r=\"0.0285\"/><circle cx=\"7.5855\" cy=\"0.6205\" r=\"0.0285\"/></g><g><title>Germany</title><circle cx=\"0.9705\" cy=\"2.0295\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"2.0295\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"2.0295\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"2.0295\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"1.8455\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"1.9375\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"1.9375\" r=\"0.0285\"/></g><rect x=\"3.5948\" y=\"1.4375\" width=\"4.8122\" height=\"1.0000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><g><title>Poland</title><circle cx=\"0.9705\" cy=\"3.3045\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.1205\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"3.3045\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"3.1205\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"3.1205\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"3.3045\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"3.1205\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"3.3045\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"3.1205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"3.3045\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.1205\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"3.3045\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"3.2125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"3.2125\" r=\"0.0285\"/></g><rect x=\"3.5948\" y=\"2.7125\" width=\"5.3489\" height=\"1.0000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><g><title>Chile</title><circle cx=\"0.9705\" cy=\"4.5795\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"4.3955\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"4.5795\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"4.3955\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"4.3955\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"4.5795\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"4.3955\" r=\"0.0285\"/><circle cx=\"1.9505\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"2.4405\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"4.4875\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"4.4875\" r=\"0.0285\"/></g><rect x=\"3.5948\" y=\"3.9875\" width=\"4.8012\" height=\"1.0000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><g><title>Japan</title><circle cx=\"0.9705\" cy=\"5.8545\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"5.8545\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"5.8545\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"5.6705\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"5.7625\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"5.7625\" r=\"0.0285\"/></g><rect x=\"3.5948\" y=\"5.2625\" width=\"3.8885\" height=\"1.0000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><g><title>Canada</title><circle cx=\"0.9705\" cy=\"7.1295\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"7.1295\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"1.7055\" cy=\"7.0375\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"7.0375\" r=\"0.0285\"/><circle cx=\"2.3485\" cy=\"6.9455\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"7.0375\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"7.0375\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"7.0375\" r=\"0.0285\"/></g><rect x=\"3.5948\" y=\"6.5375\" width=\"4.4592\" height=\"1.0000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><g><title>Italy</title><circle cx=\"0.9705\" cy=\"8.4045\" r=\"0.0285\"/><circle cx=\"1.1235\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"1.2155\" cy=\"8.2205\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"1.3685\" cy=\"8.4045\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"8.2205\" r=\"0.0285\"/><circle cx=\"1.4605\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"1.6135\" cy=\"8.2205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"8.2205\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"1.8585\" cy=\"8.4045\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"8.2205\" r=\"0.0285\"/><circle cx=\"2.1035\" cy=\"8.4045\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"8.2205\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"2.1955\" cy=\"8.4045\" r=\"0.0285\"/><circle cx=\"2.6855\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"2.9305\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"3.1755\" cy=\"8.3125\" r=\"0.0285\"/><circle cx=\"3.4205\" cy=\"8.3125\" r=\"0.0285\"/></g><rect x=\"3.5948\" y=\"7.8125\" width=\"5.3834\" height=\"1.0000\" fill=\"none\" stroke=\"#5b5852\" stroke-width=\"0.0417\"/><line x1=\"3.5948\" y1=\"1.3000\" x2=\"3.5948\" y2=\"9.3424\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"3.5948\" y1=\"9.3250\" x2=\"9.8865\" y2=\"9.3250\" stroke=\"#5b5852\" stroke-width=\"0.0347\"/><line x1=\"3.5948\" y1=\"9.0750\" x2=\"3.5948\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"4.6434\" y1=\"9.0750\" x2=\"4.6434\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"5.6921\" y1=\"9.0750\" x2=\"5.6921\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"6.7407\" y1=\"9.0750\" x2=\"6.7407\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"7.7893\" y1=\"9.0750\" x2=\"7.7893\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"8.8379\" y1=\"9.0750\" x2=\"8.8379\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><line x1=\"9.8865\" y1=\"9.0750\" x2=\"9.8865\" y2=\"9.5750\" stroke=\"#5b5852\" stroke-width=\"0.0208\"/><g><title>0%</title><circle cx=\"3.5028\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"3.5948\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.5948\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"3.5948\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"3.7478\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"3.8398\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"3.8398\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.0848\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"4.0848\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"4.2378\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"4.3298\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"4.3298\" cy=\"9.9125\" r=\"0.0285\"/></g><g><title>2%</title><circle cx=\"5.6001\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"5.6921\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"5.6921\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"5.6921\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"5.8451\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"5.8451\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"6.1821\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"6.1821\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"6.3351\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"6.4271\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"6.4271\" cy=\"9.9125\" r=\"0.0285\"/></g><g><title>4%</title><circle cx=\"7.6973\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"7.7893\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"7.7893\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"7.7893\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"7.9423\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.0343\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.0343\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"8.2793\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"8.2793\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"8.4323\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"8.5243\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"8.5243\" cy=\"9.9125\" r=\"0.0285\"/></g><g><title>6%</title><circle cx=\"9.7945\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"9.8865\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"9.8865\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"9.8865\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"10.0395\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"10.0395\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"10.1315\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"10.3765\" cy=\"9.7285\" r=\"0.0285\"/><circle cx=\"10.3765\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"10.5295\" cy=\"9.9125\" r=\"0.0285\"/><circle cx=\"10.6215\" cy=\"9.8205\" r=\"0.0285\"/><circle cx=\"10.6215\" cy=\"9.9125\" r=\"0.0285\"/></g><g><title>Unemployment rate</title><circle cx=\"3.5948\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.7478\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.7478\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.8398\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"3.9928\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"3.9928\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"4.0848\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.0848\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"4.2378\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.3298\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"4.4828\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.4828\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"4.5748\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.7278\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.7278\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"4.7278\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"4.8198\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.9728\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"4.9728\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"4.9728\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"5.2178\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"5.2178\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"5.3098\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"5.4628\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"5.4628\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"5.5548\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"5.5548\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"5.5548\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"5.7998\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"5.7998\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"5.9528\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"5.9528\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"6.0448\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.0448\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.4428\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.4428\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.4428\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"6.5348\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.6878\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"6.9328\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"6.9328\" cy=\"10.3125\" r=\"0.0285\"/><circle cx=\"7.0248\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"7.0248\" cy=\"10.2205\" r=\"0.0285\"/><circle cx=\"7.1778\" cy=\"10.1285\" r=\"0.0285\"/><circle cx=\"7.2698\" cy=\"10.2205\" r=\"0.0285\"/></g></g></g></g></svg>",
+    "key": [],
+    "pages": 1,
+    "pdf": "/samples/synthetic/f3-tactile.pdf",
+    "svg": "/samples/synthetic/f3-tactile.svg"
+   },
+   "brf": "/samples/synthetic/f3.brf",
+   "sound": {
+    "low_hz": 220,
+    "high_hz": 880,
+    "seconds_per_point": 0.25,
+    "pitch": "log",
+    "value_scale": "linear",
+    "series": {
+     "Unemployment rate": [
+      {
+       "x": "Germany",
+       "value": 4.589145064668388,
+       "hz": 518.15
+      },
+      {
+       "x": "Poland",
+       "value": 5.100938293975855,
+       "hz": 852.32
+      },
+      {
+       "x": "Chile",
+       "value": 4.57864177974021,
+       "hz": 512.88
+      },
+      {
+       "x": "Japan",
+       "value": 3.7082638128607437,
+       "hz": 220.0
+      },
+      {
+       "x": "Canada",
+       "value": 4.252462482139316,
+       "hz": 373.47
+      },
+      {
+       "x": "Italy",
+       "value": 5.1337976697830925,
+       "hz": 880.0
+      }
+     ]
+    }
+   },
+   "wav": "/samples/synthetic/f3.wav",
+   "truth": {
+    "x": [
+     "Germany",
+     "Poland",
+     "Chile",
+     "Japan",
+     "Canada",
+     "Italy"
+    ],
+    "series": {
+     "Unemployment rate": [
+      4.597809965953325,
+      5.11322940113066,
+      4.590105877966877,
+      3.7201415810639165,
+      4.2636505342761915,
+      5.147719766902484
+     ]
+    }
+   }
+  }
+ ],
+ "export": "/samples/synthetic/raised-export.zip",
+ "cost": {
+  "total_usd": 0.0,
+  "calls": []
+ }
+}
