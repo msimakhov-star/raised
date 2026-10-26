@@ -1,0 +1,53 @@
+{
+ "generated": "26 Oct 2026",
+ "headline": "On 300 synthetic charts with known values, pixel measurement alone reads values with a median error of 0.24% of the axis range. Model configurations are added when they have been run.",
+ "rows": [
+  {
+   "config": "pixel_only",
+   "split": "synth-bench",
+   "n": 300,
+   "rms_f1": 0.8975235298375099,
+   "median_error": 0.00241,
+   "within_2pct": 0.8306010928961749,
+   "usd_per_chart": 0.0,
+   "seconds_per_chart": 1.72434
+  },
+  {
+   "config": "pixel_only",
+   "split": "synth-probe",
+   "n": 50,
+   "rms_f1": 0.9294717730239574,
+   "median_error": 0.00189,
+   "within_2pct": 0.8729792147806005,
+   "usd_per_chart": 0.0,
+   "seconds_per_chart": 1.32562
+  }
+ ],
+ "by_type": [
+  {
+   "config": "pixel_only",
+   "type": "bar",
+   "median_error": 0.00161
+  },
+  {
+   "config": "pixel_only",
+   "type": "grouped bar",
+   "median_error": 0.0017500000000000003
+  },
+  {
+   "config": "pixel_only",
+   "type": "hbar",
+   "median_error": 0.00103
+  },
+  {
+   "config": "pixel_only",
+   "type": "line",
+   "median_error": 0.00308
+  },
+  {
+   "config": "pixel_only",
+   "type": "scatter",
+   "median_error": 0.00144
+  }
+ ]
+}
