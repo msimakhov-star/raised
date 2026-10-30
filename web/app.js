@@ -180,8 +180,8 @@ function renderCompare(f) {
   const disputed = (f.points || []).filter(p => p.status === 'disputed');
   $('#no-disputes').hidden = disputed.length > 0 || f.status === 'unsupported';
   $('#dispute-list').innerHTML = disputed.map((p, k) => `<li class="dispute">
-      <p><b>${esc(p.series)}, ${esc(fmtX(p.x))}</b>: the vision model read <b>${fmt(p.reading_a)}</b>, the pixels measure <b>${fmt(p.reading_b)}</b>. ${esc(p.note || '')}</p>
-      <label>Value to use <input type="text" inputmode="decimal" data-k="${k}" value="${p.value ?? ''}" aria-label="Value for ${esc(p.series)} at ${esc(fmtX(p.x))}"></label></li>`).join('');
+      <p><b>${esc(p.series)}, ${esc(fmtX(p.x))}</b>: the vision model read <b>${fmt(p.reading_a)}</b>, the pixels measure <b>${fmt(p.reading_b)}</b>. The redraw that matches the original better is pre-filled below.</p>
+      <label>Value to use <input type="text" inputmode="decimal" data-k="${k}" value="${p.value === null || p.value === undefined ? '' : Number(Number(p.value).toPrecision(5))}" aria-label="Value for ${esc(p.series)} at ${esc(fmtX(p.x))}"></label></li>`).join('');
   $('#accept').hidden = disputed.length === 0;
 }
 $('#mix').addEventListener('input', e => { $('#img-rerender').style.opacity = e.target.value / 100; $('#mix-out').textContent = e.target.value + '%'; });
