@@ -3,7 +3,7 @@
 Project name: Raised
 
 Elevator pitch (tagline, 200 characters max):
-Textbook charts a blind student can read, hear and touch. Every number checked against the pixels.
+Raised: Transforms textbook charts into accessible data: a sound table and tactile braille graphic, verifying each number’s accuracy.
 
 Track: Best Apps and Agents
 
