@@ -214,7 +214,10 @@ def process_figure(crop_img: Image.Image, *, fid: str, url: callable, client=Non
     if semantics_override is not None:
         sem, reading_a, agreement = semantics_override, reading_a_override, {}
     else:
-        sem, reading_a, agreement = _semantics(client, crop_png)
+        try:
+            sem, reading_a, agreement = _semantics(client, crop_png)
+        except Exception as e:  # one unreadable chart must not stop the document
+            sem, reading_a, agreement = Semantics(chart_type="unsupported", title=caption[:120]), None, {"error": str(e)[:160]}
     sem.caption = sem.caption or caption
     ev("semantics", "done" if n == of else "running")
     fig = {"id": fid, "page": page, "figure_number": number, "caption": caption, "chart_type": sem.chart_type,

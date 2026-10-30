@@ -21,7 +21,7 @@ BARS = ("bar", "grouped_bar", "hbar")
 def read_semantics(client, crop_png: bytes, votes: int = 3, model: str = MODELS["vl"]) -> tuple[Semantics, Table, dict]:
     """-> (semantics, reading A, per-field agreement 0..1). votes=1 is a single call at temperature 0."""
     msgs = [{"role": "user", "content": [image_part(crop_png), {"type": "text", "text": prompts.SEMANTICS}]}]
-    kw = {"step": "semantics", "max_tokens": 8192}
+    kw = {"step": "semantics", "max_tokens": 16000}  # long series (100+ yearly points) overflowed 8k
     answers = (client.chat_json_n(model, msgs, prompts.SEMANTICS_SCHEMA, votes, **kw) if votes > 1
                else [client.chat_json(model, msgs, prompts.SEMANTICS_SCHEMA, **kw)])
     return merge_votes(answers)

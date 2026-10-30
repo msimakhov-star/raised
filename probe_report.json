@@ -1,0 +1,670 @@
+{
+  "base_url": "https://api.tokenfactory.nebius.com/v1",
+  "models": {
+    "vl": "nvidia/Nemotron-3.5-Super-VL",
+    "reason": "nvidia/Nemotron-3-Ultra-550b-a55b",
+    "fast": "nvidia/Nemotron-3_5-Lightning",
+    "minicpm": "openbmb/MiniCPM-V-4_5"
+  },
+  "chart": "0000.jpg",
+  "started": "2026-10-30 12:35:25",
+  "schema_forms": {
+    "openai": {
+      "status": 200,
+      "ms": 9072,
+      "usage": {
+        "completion_tokens": 3956,
+        "prompt_tokens": 1282,
+        "total_tokens": 5238,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": null,
+          "audio_tokens": null,
+          "reasoning_tokens": 3602,
+          "rejected_prediction_tokens": null
+        },
+        "prompt_tokens_details": {
+          "audio_tokens": null,
+          "cached_tokens": 0,
+          "created_cache_tokens": 0,
+          "multimodal_tokens": {
+            "image": 282
+          }
+        }
+      },
+      "choices": 1,
+      "message_keys": [
+        "annotations",
+        "audio",
+        "content",
+        "function_call",
+        "reasoning_content",
+        "refusal",
+        "role",
+        "tool_calls"
+      ],
+      "content": "{\n  \"chart_type\": \"scatter\",\n  \"title\": \"Population\",\n  \"x_title\": \"Year\",\n  \"y_title\": \"Population (M)\",\n  \"x_scale\": \"linear\",\n  \"y_scale\": \"linear\",\n  \"x_ticks\": [\"1990\", \"1992\", \"1994\", \"1996\", \"1998\"],\n  \"y_ticks\": [\"34M\", \"36M\", \"38M\", \"40M\", \"42M\", \"44M\", \"46M\"],\n  \"categories\": [],\n  \"series\": [\n    {\n      \"name\": \"Population (M)\",\n      \"color\": \"green\",\n      \"style\": \"solid\",\n      \"marker\": \"o\"\n    }\n  ],\n  \"legend\": [],\n  \"source\": \"Source: national statistics office (synthetic)\",\n  \"reading\": {\n    \"x\": [ \"1990\", \"1991\", \"1992\", \"1993\", \"1994\", \"1995\", \"1996\", \"1997\", \"1998\", \"1999\" ],\n    \"series\": [\n      {\n        \"name\": \"Population (M)\",\n        \"values\": [ 39.2, 43.1, 45.4, 41.2, 36.1, 33.5, 34.6, 41.2, 46.2, 42.9 ]\n      }\n    ]\n  }\n}",
+      "valid": true
+    },
+    "bare": {
+      "status": 422,
+      "ms": 673,
+      "error": "nvidia/Nemotron-3.5-Super-VL HTTP 422: b'{\"error\":{\"type\":\"invalid_request_error\",\"message\":\"body.response_format.json_schema.name: Field required; body.response_format.json_schema.schema: Field required\",\"param\":null,\"code\":null},\"detail\":\"Invalid request. Please check the parameters and try again."
+    }
+  },
+  "schema_form_used": "openai",
+  "n": {
+    "status": 200,
+    "ms": 13663,
+    "usage": {
+      "completion_tokens": 10795,
+      "prompt_tokens": 1282,
+      "total_tokens": 12077,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 9742,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "created_cache_tokens": 0,
+        "multimodal_tokens": {
+          "image": 282
+        }
+      }
+    },
+    "choices": 3,
+    "message_keys": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "content": "{\n  \"chart_type\": \"scatter\",\n  \"title\": \"Population\",\n  \"x_title\": \"Year\",\n  \"y_title\": \"Population (M)\",\n  \"x_scale\": \"linear\",\n  \"y_scale\": \"linear\",\n  \"x_ticks\": [\"1990\", \"1992\", \"1994\", \"1996\", \"1998\"],\n  \"y_ticks\": [\"34M\", \"36M\", \"38M\", \"40M\", \"42M\", \"44M\", \"46M\"],\n  \"categories\": [],\n  \"series\": [\n    {\n      \"name\": \"Population (M)\",\n      \"color\": \"green\",\n      \"style\": \"solid\",\n      \"marker\": \"o\"\n    }\n  ],\n  \"legend\": [],\n  \"source\": \"Source: national statistics office (synthetic)\",\n  \"reading\": {\n    \"x\": [\"1990\", \"1991\", \"1992\", \"1993\", \"1994\", \"1995\", \"1996\", \"1997\", \"1998\", \"1999\"],\n    \"series\": [\n      {\n        \"name\": \"Population (M)\",\n        \"values\": [39.2, 43.2, 45.5, 41.2, 36.1, 33.5, 34.7, 41.2, 46.2, 42.9]\n      }\n    ]\n  }\n}",
+    "honoured": true
+  },
+  "cached": {
+    "first": 0,
+    "second": 0,
+    "prompt_tokens": 312,
+    "statuses": [
+      200,
+      200
+    ]
+  },
+  "image_sizes": {
+    "512": {
+      "status": 200,
+      "bytes": 34925,
+      "ms": 1260,
+      "prompt_tokens": 298,
+      "error": null
+    },
+    "1024": {
+      "status": 200,
+      "bytes": 103040,
+      "ms": 1839,
+      "prompt_tokens": 768,
+      "error": null
+    },
+    "2000": {
+      "status": 200,
+      "bytes": 251045,
+      "ms": 2991,
+      "prompt_tokens": 2867,
+      "error": null
+    },
+    "3000": {
+      "status": 200,
+      "bytes": 420193,
+      "ms": 2688,
+      "prompt_tokens": 3296,
+      "error": null
+    },
+    "4096": {
+      "status": 200,
+      "bytes": 620386,
+      "ms": 4163,
+      "prompt_tokens": 3296,
+      "error": null
+    }
+  },
+  "multi_image": {
+    "status": 200,
+    "ms": 1641,
+    "usage": {
+      "completion_tokens": 64,
+      "prompt_tokens": 610,
+      "total_tokens": 674,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 64,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "created_cache_tokens": 0,
+        "multimodal_tokens": {
+          "image": 564
+        }
+      }
+    },
+    "choices": 1,
+    "message_keys": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "content": "",
+    "says_two": false
+  },
+  "vl_reasoning": {
+    "status": 200,
+    "ms": 9798,
+    "usage": {
+      "completion_tokens": 3842,
+      "prompt_tokens": 1282,
+      "total_tokens": 5124,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 3488,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "created_cache_tokens": 0,
+        "multimodal_tokens": {
+          "image": 282
+        }
+      }
+    },
+    "choices": 1,
+    "message_keys": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "content": "{\n  \"chart_type\": \"scatter\",\n  \"title\": \"Population\",\n  \"x_title\": \"Year\",\n  \"y_title\": \"Population (M)\",\n  \"x_scale\": \"linear\",\n  \"y_scale\": \"linear\",\n  \"x_ticks\": [\"1990\", \"1992\", \"1994\", \"1996\", \"1998\"],\n  \"y_ticks\": [\"34M\", \"36M\", \"38M\", \"40M\", \"42M\", \"44M\", \"46M\"],\n  \"categories\": [],\n  \"series\": [\n    {\n      \"name\": \"Population (M)\",\n      \"color\": \"green\",\n      \"style\": \"solid\",\n      \"marker\": \"o\"\n    }\n  ],\n  \"legend\": [],\n  \"source\": \"Source: national statistics office (synthetic)\",\n  \"reading\": {\n    \"x\": [ \"1990\", \"1991\", \"1992\", \"1993\", \"1994\", \"1995\", \"1996\", \"1997\", \"1998\", \"1999\" ],\n    \"series\": [\n      {\n        \"name\": \"Population (M)\",\n        \"values\": [ 39.2, 43.1, 45.4, 41.2, 36.1, 33.5, 34.6, 41.2, 46.2, 42.9 ]\n      }\n    ]\n  }\n}",
+    "valid": true,
+    "completion_tokens_low": 3842,
+    "completion_tokens_default": 3956
+  },
+  "ultra": {
+    "status": 200,
+    "ms": 1069,
+    "usage": {
+      "completion_tokens": 120,
+      "prompt_tokens": 72,
+      "total_tokens": 192,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 110,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0,
+        "multimodal_tokens": null
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 72
+    },
+    "choices": 1,
+    "message_keys": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "content": "{\"answer\": 391}",
+    "valid": true,
+    "correct": true
+  },
+  "lightning": {
+    "status": 200,
+    "ms": 10433,
+    "usage": {
+      "completion_tokens": 335,
+      "prompt_tokens": 95,
+      "total_tokens": 430,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 317,
+        "rejected_prediction_tokens": null
+      },
+      "prompt_tokens_details": null,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 95
+    },
+    "choices": 1,
+    "message_keys": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "reasoning_content",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "content": "{\"city\": \"Leeds\", \"year\": 2021}",
+    "valid": true
+  },
+  "minicpm": {
+    "status": 200,
+    "ms": 2415,
+    "usage": {
+      "completion_tokens": 237,
+      "prompt_tokens": 1180,
+      "total_tokens": 1417,
+      "completion_tokens_details": null,
+      "prompt_tokens_details": null
+    },
+    "choices": 1,
+    "message_keys": [
+      "annotations",
+      "audio",
+      "content",
+      "function_call",
+      "reasoning",
+      "refusal",
+      "role",
+      "tool_calls"
+    ],
+    "content": "{\"chart_type\": \"scatter\", \"title\": \"Population\", \"x_title\": \"Year\", \"y_title\": \"Population (M)\", \"x_scale\": \"linear\", \"y_scale\": \"linear\", \"x_ticks\": [\"1990\", \"1992\", \"1994\", \"1996\", \"1998\"], \"y_ticks\": [\"34M\", \"36M\", \"38M\", \"40M\", \"42M\", \"44M\", \"46M\"], \"categories\": [], \"series\": [{\"name\": \"Population\", \"color\": \"dark green\", \"style\": \"solid\", \"marker\": \"o\"}], \"legend\": [], \"source\": \"Source: national statistics office (synthetic)\", \"reading\": {\"x\": [\"1990\", \"1992\", \"1994\", \"1996\", \"1998\"], \"series\": [{\"name\": \"Population\", \"values\": [39, 45, 42, 34, 46]}]}}",
+    "valid": true
+  },
+  "find_figures": {
+    "truth_box": [
+      105,
+      181,
+      850,
+      539
+    ],
+    "found": [
+      {
+        "bbox": [
+          142,
+          182,
+          848,
+          526
+        ],
+        "caption": "Figure 1.2 Exports and imports, 2000 to 2010 (synthetic).",
+        "figure_number": "1.2",
+        "is_data_chart": true
+      }
+    ],
+    "ms": 5328,
+    "best_iou": 0.911
+  },
+  "semantics": {
+    "charts": 10,
+    "failed": 0,
+    "chart_type": 1.0,
+    "x_ticks": 1.0,
+    "y_ticks": 1.0,
+    "ticks_both": 1.0,
+    "n_series": 0.8,
+    "log": 1.0,
+    "reading_a_median_err_pct_range": 0.8,
+    "reading_a_within_2pct": 0.871,
+    "usd_per_chart": 0.00996,
+    "rows": [
+      {
+        "chart": "0000",
+        "type": "scatter",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0095,
+        "s": 13.1
+      },
+      {
+        "chart": "0001",
+        "type": "scatter",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0074,
+        "s": 11.1
+      },
+      {
+        "chart": "0002",
+        "type": "bar",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [
+          0.007401161696621898,
+          0.004987728344947072,
+          0.005709485757328139,
+          0.0030491441063438744,
+          0.004293666182175798,
+          0.00022965117651642687,
+          0.01027970412425202,
+          0.0025058939660993927
+        ],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0058,
+        "s": 8.8
+      },
+      {
+        "chart": "0003",
+        "type": "scatter",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0162,
+        "s": 22.6
+      },
+      {
+        "chart": "0004",
+        "type": "line",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [
+          0.01460373998512223,
+          0.01790940475618714,
+          0.05786210481825692,
+          0.022952202255509764,
+          0.008184221696800378,
+          0.06757265090890141,
+          0.006887443909345602,
+          0.00659719182021654,
+          0.04443900903291389,
+          0.01946289586533065,
+          0.004100497759479913
+        ],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0077,
+        "s": 10.7
+      },
+      {
+        "chart": "0005",
+        "type": "hbar",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [
+          0.012070787047092532,
+          0.0030315967007829084,
+          0.0023907760916320815,
+          0.0010239814434604947,
+          0.010929104742336677
+        ],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0141,
+        "s": 21.8
+      },
+      {
+        "chart": "0006",
+        "type": "bar",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [
+          0.013185660753793854,
+          0.009137749593753445,
+          0.0033237883294258003
+        ],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0054,
+        "s": 9.0
+      },
+      {
+        "chart": "0007",
+        "type": "line",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": false,
+        "log": true,
+        "errors": [],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 0.0
+        },
+        "usd": 0.0151,
+        "s": 24.4
+      },
+      {
+        "chart": "0008",
+        "type": "line",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": false,
+        "log": true,
+        "errors": [],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 0.6666666666666666
+        },
+        "usd": 0.0138,
+        "s": 20.6
+      },
+      {
+        "chart": "0009",
+        "type": "bar",
+        "chart_type": true,
+        "x_ticks": true,
+        "y_ticks": true,
+        "n_series": true,
+        "log": true,
+        "errors": [
+          0.013933946447832447,
+          0.0017589916554174123,
+          0.007972622802385377,
+          0.01604271840032634
+        ],
+        "agreement": {
+          "chart_type": 1.0,
+          "title": 1.0,
+          "x_title": 1.0,
+          "y_title": 1.0,
+          "x_scale": 1.0,
+          "y_scale": 1.0,
+          "source": 1.0,
+          "x_ticks": 1.0,
+          "y_ticks": 1.0,
+          "categories": 1.0,
+          "legend": 1.0,
+          "series": 1.0
+        },
+        "usd": 0.0046,
+        "s": 7.2
+      }
+    ]
+  },
+  "rate_limits": {
+    "last_response": {
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "2000000",
+      "x-ratelimit-remaining-requests": "997",
+      "x-ratelimit-remaining-tokens": "1997347",
+      "x-ratelimit-reset-requests": "1s",
+      "x-ratelimit-reset-tokens": "1s"
+    },
+    "429s": []
+  },
+  "latency_ms": {
+    "probe-schema-openai": 9072,
+    "probe-n": 13663,
+    "probe-cache": 1238,
+    "probe-image-512": 1260,
+    "probe-image-1024": 1839,
+    "probe-image-2000": 2991,
+    "probe-image-3000": 2688,
+    "probe-image-4096": 4163,
+    "probe-multi": 1641,
+    "probe-vl-low": 9798,
+    "probe-ultra": 1069,
+    "probe-lightning": 10433,
+    "probe-minicpm": 2415,
+    "find": 5296,
+    "semantics": 12091
+  },
+  "cost": {
+    "total_usd": 0.1249,
+    "cached_share": 0.0,
+    "calls": 25
+  }
+}

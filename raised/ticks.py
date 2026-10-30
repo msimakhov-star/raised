@@ -591,7 +591,16 @@ def locate_ticks(img, sem: Semantics) -> dict:
     xlab = [t for *_, t, _ in results["x"]]
     lim = (max([t.x1 for t in ylab], default=-1) + 1, 0, w, min([t.y0 for t in xlab], default=h + 1) - 1)
     if lim != (0, 0, w, h):
-        box = find_plot_box(rgb, words + vertical, lim)[0]
+        limited = find_plot_box(rgb, words + vertical, lim)[0]
+        # a stray label match (rotated year labels read high up) can squeeze the limit to nothing: keep the
+        # unlimited box then, and failing that use the span of the matched ticks themselves
+        if limited[2] - limited[0] >= 20 and limited[3] - limited[1] >= 20:
+            box = limited
+    if box[2] - box[0] < 20 or box[3] - box[1] < 20:
+        xs_ = [p for *_, p in results["x"]] or [0, w]
+        ys_ = [p for *_, p in results["y"]] or [0, h]
+        box = (min(xs_), min(ys_), max(xs_), max(ys_))
+        out["diagnostics"]["box_method"] = "tick span (fallback)"
     out["plot_box"] = box
     results = {a: [(lab, v, p) for lab, v, _, p in r] for a, r in results.items()}
     for axis in ("x", "y"):

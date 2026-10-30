@@ -196,6 +196,15 @@ def scene(img, sem: Semantics, tr: dict) -> Scene:
     elif sem.chart_type == "hbar":
         frame[:, :x1 - 8] = False
     bg = _mode_colour(rgb[frame].astype(float)) if frame.any() else page_colour(rgb)
+    # Axis spines and gridlines: straight runs of non-face pixels across most of the plot. Some house styles
+    # (OpenStax) draw axes in the series colour, which otherwise traces as a flat line at the axis value.
+    ink = np.abs(rgb.astype(float) - bg).max(2) > 40
+    inner = ink[y0:y1, x0:x1]
+    if inner.size and sem.chart_type in ("line", "scatter"):
+        for r in np.where(inner.mean(1) > 0.6)[0]:
+            region[max(y0 + r - 2, 0):y0 + r + 3, :] = False
+        for c in np.where(inner.mean(0) > 0.6)[0]:
+            region[:, max(x0 + c - 2, 0):x0 + c + 3] = False
     legend_box, swatch = _legend(rgb, sem, words, bg, box)
     if legend_box:
         lx0, ly0, lx1, ly1 = legend_box

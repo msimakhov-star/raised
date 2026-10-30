@@ -1,5 +1,12 @@
 [
  {
+  "id": "openstax",
+  "title": "Economics textbook, 7 pages",
+  "subtitle": "OpenStax Principles of Economics 2e, CC BY 4.0",
+  "thumb": "/samples/openstax/f1-chart.png",
+  "note": "this chapter excerpt was read on 30 Oct 2026 by the full pipeline on Nebius Token Factory"
+ },
+ {
   "id": "synthetic",
   "title": "Three synthetic charts",
   "subtitle": "Known values, measured by the real code",
